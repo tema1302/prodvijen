@@ -1,9 +1,60 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-}
+@import "font-family.css";
+@import "varibles.scss";
+@import "default.scss";
+
 header {
-    
+    background-color: $bgcolor1;
+    background-image: url(../images/h__ellipse_desk.png);
+    color: $maincolor1;
+    .h__content {
+        padding: 210px 0;
+        font-weight: bold;
+        &_text {
+            padding-top: 35px;
+            margin-left: 140px;
+            .title-1 {
+                font-size: 30px;
+                margin-bottom: 70px;
+            }
+            .title-2 {
+                font-size: 96px;
+                color: $basecolor;
+                margin-bottom: 15px;
+            }
+            .title-3 {
+                font-size: 32px;
+            }
+        }
+        &_img {
+
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        .h__content {
+            padding: 70px 58px;
+            &_text {
+                padding-top: 35px;
+                .title-1 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .h__content {
+            padding: 40px 20px;
+            &_text {
+                padding-top: 35px;
+                .title-1 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

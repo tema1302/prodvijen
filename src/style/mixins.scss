@@ -1,0 +1,10 @@
+@mixin white-box($bg, $color, $bRad) {
+    background: $bg;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, $color);
+    border-radius: $bRad;
+}
+@mixin vertic-hor-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

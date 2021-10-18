@@ -1,0 +1,99 @@
+@import url(d:\Frontend\CoralClub\CBA\prodvijen\src\style\font-family.css);
+@import url(./varibles.scss);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Gilroy", sans-serif;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #141414;
+}
+
+a:hover {
+  color: #141414;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  container-fluid {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  container-fluid {
+    padding: 0 10px;
+  }
+}
+
+header {
+  background-color: #f2cb05;
+  background-image: url(../images/h__ellipse_desk.png);
+  color: #141414;
+}
+
+header .h__content {
+  padding: 210px 0;
+  font-weight: bold;
+}
+
+header .h__content_text {
+  padding-top: 35px;
+  margin-left: 140px;
+}
+
+header .h__content_text .title-1 {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+header .h__content_text .title-2 {
+  font-size: 96px;
+  color: #E4326C;
+  margin-bottom: 15px;
+}
+
+header .h__content_text .title-3 {
+  font-size: 32px;
+}
+
+@media (max-width: 1200px) {
+  header .h__content {
+    padding: 70px 58px;
+  }
+  header .h__content_text {
+    padding-top: 35px;
+  }
+  header .h__content_text .title-1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .h__content {
+    padding: 40px 20px;
+  }
+  header .h__content_text {
+    padding-top: 35px;
+  }
+  header .h__content_text .title-1 {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
