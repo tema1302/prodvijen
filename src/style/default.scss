@@ -1,14 +1,19 @@
 @import "varibles.scss";
+@import "font-family.css";
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: 1.2;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     font-size: 16px;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", serif;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
