@@ -1,0 +1,97 @@
+@import "varibles.scss";
+@import "mixins.scss";
+
+.s-1 {
+  background-color: $bgcolor1;
+
+  h2 {
+    font-size: 45px;
+    line-height: 1.5;
+  }
+
+  &__px400 {
+    padding: 100px 400px;
+  }
+
+  .mb-80 {
+    margin-bottom: 80px !important;
+  }
+
+  &__substrate {
+    z-index: 5;
+    height: 100%;
+    @include trans;
+
+    .img-hover {
+      @include XY-abs-align;
+      @include trans;
+      opacity: 0;
+      pointer-events: none;
+
+      &.h-1 {
+        z-index: -1;
+      }
+
+      &.h-2 {
+        z-index: -1;
+      }
+
+      &.h-3 {
+        z-index: -1;
+      }
+
+      &.h-4 {
+        z-index: -1;
+      }
+    }
+
+    .desc {
+      font-size: 18px;
+      line-height: 1.3;
+      transition: all 0.1s ease;
+      flex-grow: 1;
+      will-change: transform;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+
+      .desc {
+        transform: scale(1.05);
+      }
+
+      .img-hover {
+        opacity: 1;
+
+        &.h-1 {
+          top: 14%;
+          left: -2%;
+        }
+
+        &.h-2 {
+          top: 87%;
+          left: 107%;
+        }
+
+        &.h-3 {
+          top: 9%;
+          left: 92%;
+          z-index: 0;
+        }
+
+        &.h-4 {
+          top: 97%;
+          left: 6%;
+          z-index: 0;
+        }
+      }
+    }
+  }
+
+  &__white-block {
+    @include white-box(#fefefe, 0.2, $radius2, 20px, 10px, 0px);
+    @include trans;
+    flex-direction: column;
+    height: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.s-2 {
+  background-color: #E5E5E5;
+  color: #000000;
+  font-family: "Proxima Nova Rg", serif;
+  padding: 100px 0;
+}
+
+.s-2 h3 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.s-2__white-block {
+  max-width: 930px;
+  margin: 30px auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 37px;
+  padding: 40px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  min-height: 220px;
+}
+
+.s-2__white-block_img {
+  padding-right: 70px;
+}
+
+.s-2__white-block_info .title {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.s-2__white-block_info .title::after {
+  content: '';
+  position: absolute;
+  width: 157px;
+  height: 2px;
+  background-color: #962262;
+  left: 0;
+  bottom: -10px;
+}
+
+.s-2__white-block_info .desc {
+  font-size: 31px;
+}
+
+.s-2__after-text {
+  font-size: 32px;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=section-2.css.map */

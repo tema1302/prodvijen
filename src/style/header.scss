@@ -1,0 +1,112 @@
+@import "varibles.scss";
+
+header {
+  background-color: $bgcolor1;
+  background-image: url(../images/h__ellipse_desk.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  color: $maincolor1;
+
+  .h__content {
+    font-weight: bold;
+
+    &_space {
+      width: 140px;
+    }
+
+    &_text {
+      padding-top: 165px;
+
+      .title-1 {
+        font-size: 1.75rem;
+        margin-bottom: 80px;
+      }
+
+      .title-2 {
+        font-size: 5.5rem;
+        color: $basecolor;
+        margin-bottom: 15px;
+      }
+
+      .title-3 {
+        font-size: 1.875rem;
+        margin-bottom: 70px;
+      }
+
+      .under-title {
+        .buttons {
+          margin-bottom: 25px;
+
+          .btn-default {
+            @include btn-default($bgcolor1);
+          }
+        }
+
+        .text {
+          font-size: 14px;
+          padding-left: 25px;
+
+          .lighten {
+            font-weight: normal;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    .h__content {
+      &_space {
+        max-width: 100px;
+      }
+
+      &_text {
+        .title-1 {
+          font-size: 26px;
+        }
+
+        .title-2 {}
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    .h__content {
+      padding: 70px 58px;
+
+      &_text {
+        padding-top: 35px;
+
+        .title-1 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .h__content {
+      padding: 40px 20px;
+
+      &_text {
+        padding-top: 35px;
+
+        .title-1 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

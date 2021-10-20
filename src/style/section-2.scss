@@ -1,0 +1,53 @@
+@import "varibles.scss";
+@import "mixins.scss";
+@import "font-family.scss";
+
+.s-2 {
+  background-color: $bgcolor2;
+  color: $maincolor2;
+  font-family: "Proxima Nova Rg", serif;
+  padding: 100px 0;
+
+  h3 {
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  &__white-block {
+    max-width: 930px;
+    margin: 30px auto;
+    @include white-box(#ffffff, 0.1, $radius3, 40px, 70px, 30px);
+    min-height: 220px;
+
+    &_img {
+      padding-right: 70px;
+    }
+
+    &_info {
+      .title {
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 25px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 157px;
+          height: 2px;
+          background-color: #962262;
+          left: 0;
+          bottom: -10px;
+        }
+      }
+
+      .desc {
+        font-size: 31px;
+      }
+    }
+  }
+
+  &__after-text {
+    font-size: 32px;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+@import "varibles.scss";
+@import "mixins.scss";
+.s-6 {
+  padding: 60px 400px;
+
+  &__title {
+    color: $basecolor;
+    font-size: 40px;
+  }
+
+  &__desc {
+    font-size: 30px;
+  }
+
+  .btn-default {
+    @include btn-default($bgcolor1);
+  }
+}

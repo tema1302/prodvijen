@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,OAAO;CAWjB;;AAZD,AAGE,IAHE,CAGF,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACpB;;AANH,AAQE,IARE,CAQF,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "section-3.scss"
+    ],
+    "names": [],
+    "file": "section-3.css"
+}

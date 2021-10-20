@@ -1,0 +1,31 @@
+@import "varibles.scss";
+@import "mixins.scss";
+
+.s-4 {
+  background-color: $bgcolor2;
+  color: $maincolor1;
+  padding: 100px 0;
+
+  h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__px230 {
+    padding: 0 230px;
+  }
+
+  &__white-block {
+    @include white-box(#fefefe, 0.2, $radius2, 20px, 20px, 40px);
+    flex-direction: column;
+
+    .desc {
+      line-height: 1.3;
+    }
+  }
+}

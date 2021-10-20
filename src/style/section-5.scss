@@ -1,0 +1,65 @@
+@import "varibles.scss";
+@import "mixins.scss";
+.s-5 {
+  background-color: $bgcolor1;
+  color: $maincolor1;
+  padding: 100px 0;
+
+  h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+  }
+
+  &__px160 {
+    padding: 0 160px;
+    margin-bottom: 100px;
+  }
+
+  &__white-block {
+    background: #FFFFFF;
+    box-shadow: 0px 9px 39px rgba(58, 70, 111, 0.15);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &_company {
+      font-size: 17px;
+      margin-bottom: 15px;
+      padding-left: 20px;
+    }
+
+    &_img {
+      margin-bottom: 25px;
+    }
+
+    &_info {
+      padding-left: 20px;
+      flex-grow: 1;
+
+      .title {
+        margin-bottom: 20px;
+        font-size: 34px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__buttons {
+    padding: 0 570px;
+
+    .btn-default {
+      @include btn-default(rgba(255, 255, 255, 0.5));
+      margin-bottom: 25px;
+    }
+
+    .text {
+      font-size: 14px;
+      padding-left: 25px;
+    }
+  }
+}

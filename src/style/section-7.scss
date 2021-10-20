@@ -1,0 +1,67 @@
+@import "varibles.scss";
+@import "mixins.scss";
+.s-7 {
+  background-color: $bgcolor2;
+  color: $maincolor1;
+  padding: 100px 310px;
+
+  h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+
+  &__dropdown {
+    padding: 50px 0px;
+    margin-bottom: 70px;
+
+    &_text {
+      font-size: 38px;
+    }
+    &_number {
+      position: absolute;
+      left: -10px;
+      bottom: 13px;
+      font-size: 130px;
+      color: rgba(20, 20, 20, 0.1);
+    }
+    &_shevron {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 40px;
+        right: 50px;
+        width: 15px;
+        height: 3px;
+        background-color: $maincolor1;
+        transform: rotate(45deg);
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        width: 15px;
+        height: 3px;
+        background-color: $maincolor1;
+        transform: rotate(-45deg);
+      }
+    }
+    &_line {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $maincolor1;
+    }
+  }
+  &_questions {
+    font-size: 35px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .btn-default {
+    @include btn-default($bgcolor1);
+    margin: 0 auto;
+  }
+}
