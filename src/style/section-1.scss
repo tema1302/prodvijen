@@ -9,7 +9,7 @@
     line-height: 1.5;
   }
 
-  &__px400 {
+  &__px-custom {
     padding: 100px 400px;
   }
 
@@ -93,5 +93,12 @@
     @include trans;
     flex-direction: column;
     height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .s-1 {
+    padding: 60px 0;
   }
 }

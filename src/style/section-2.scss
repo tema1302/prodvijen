@@ -51,3 +51,16 @@
     padding-top: 10px;
   }
 }
+
+
+@media (max-width: 576px) {
+  .s-2 {
+    padding: 40px 0;
+
+    h3 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+  }
+}

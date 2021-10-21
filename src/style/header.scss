@@ -5,6 +5,7 @@ header {
   background-image: url(../images/h__ellipse_desk.png);
   background-repeat: no-repeat;
   background-position: top;
+  padding: 0 0 120px;
   color: $maincolor1;
 
   .h__content {
@@ -16,20 +17,22 @@ header {
 
     &_text {
       padding-top: 165px;
+      flex: 0 0 auto;
+      width: 46%;
 
       .title-1 {
-        font-size: 1.75rem;
+        font-size: 28px;
         margin-bottom: 80px;
       }
 
       .title-2 {
-        font-size: 5.5rem;
+        font-size: 88px;
         color: $basecolor;
         margin-bottom: 15px;
       }
 
       .title-3 {
-        font-size: 1.875rem;
+        font-size: 30px;
         margin-bottom: 70px;
       }
 
@@ -53,43 +56,90 @@ header {
         }
       }
     }
+
+    &_img {
+
+      flex: 0 0 auto;
+      width: 43%;
+
+    }
   }
 }
 
 
 @media (max-width: 1600px) {
-  html {
-    font-size: 14px;
-  }
-
   header {
+    padding: 0 0 140px;
+
     .h__content {
       &_space {
-        max-width: 100px;
+        width: 120px;
       }
 
       &_text {
+        width: 50%;
+        padding-top: 100px;
+
         .title-1 {
           font-size: 26px;
         }
 
-        .title-2 {}
+        .title-2 {
+          font-size: 70px;
+        }
+
+        .under-title {
+          width: 350px;
+        }
+      }
+
+      &_img {
+        width: 40%;
+        margin-top: 110px;
       }
     }
   }
 }
 
+@media (max-width: 1400px) {
+  header {
+    background-position: 50% 80%;
+  }
+}
+
 @media (max-width: 1200px) {
   header {
+    background-position: 50% 100%;
+    padding: 0;
+
     .h__content {
-      padding: 70px 58px;
+      padding: 60px 0 60px 60px;
+
+      &_space {
+        width: 0;
+      }
 
       &_text {
-        padding-top: 35px;
+        width: 50%;
+        padding-top: 0;
 
         .title-1 {
           font-size: 26px;
+          margin-bottom: 40px;
         }
+
+        .under-title {
+          width: 350px;
+
+          .buttons {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      &_img {
+        width: 50%;
+        margin-top: 140px;
       }
     }
   }
@@ -97,14 +147,41 @@ header {
 
 @media (max-width: 768px) {
   header {
+    background-position: 60% 100%;
+
+    .h__top {
+      
+    }
     .h__content {
-      padding: 40px 20px;
+      padding: 20px 0 40px 20px;
 
       &_text {
         padding-top: 35px;
+        width: 100%;
 
         .title-1 {
           font-size: 18px;
+        }
+
+        .title-2 {
+          font-size: 60px;
+        }
+
+        .title-1 {
+          font-size: 24px;
+        }
+      }
+
+      &_img {
+        width: 0;
+        margin-top: 0;
+        position: relative;
+        img {
+          position: absolute;
+          width: 320px;
+          top: 240px;
+          left: -320px;
+          max-width: max-content;
         }
       }
     }

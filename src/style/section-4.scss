@@ -16,7 +16,7 @@
     margin-bottom: 50px;
   }
 
-  &__px230 {
+  &__px-custom {
     padding: 0 230px;
   }
 
@@ -27,5 +27,54 @@
     .desc {
       line-height: 1.3;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .s-4 {
+    padding: 80px 0;
+    h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .s-4 {
+    padding: 60px 0;
+    h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .s-4 {
+    padding: 40px 0;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
   }
 }

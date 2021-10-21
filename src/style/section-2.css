@@ -91,4 +91,14 @@
   font-size: 32px;
   padding-top: 10px;
 }
+
+@media (max-width: 576px) {
+  .s-2 {
+    padding: 40px 0;
+  }
+  .s-2 h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=section-2.css.map */

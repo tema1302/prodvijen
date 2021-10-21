@@ -7,48 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
   <link rel="stylesheet" href="./src/style/main.css">
   <title>ProДвижение</title>
 </head>
 
 <body>
   <header>
-    <div class="container-fluid">
-      <div
-        class="d-flex justify-content-between align-items-center text-uppercase d-none d-md-flex p-3 pb-xl-0 pt-xl-4 px-xl-5">
-        <a href="/" class="d-flex align-items-center"><img src="./src/images/h__top_quest.png" alt="" class="me-2">
-          Задать вопрос</a>
-        <a href="/" class="d-flex align-items-center"><img src="./src/images/h__top_user.png" alt="" class="me-2">
-          Авторизоваться</a>
-      </div>
-      <div class="h__content row g-0">
-        <div class="h__content_space col"></div>
-        <div class="h__content_text col-xxl-5">
-          <div class="title-1">Как вести соцсети, чтобы <br>в команду приходили новички?</div>
-          <h1 class="title-2 text-uppercase fw-bold">#Pro_Движение</h1>
-          <h2 class="title-3 text-uppercase fw-bold">SMM—марафон для дистрибьюторов Coral Club</h2>
-          <div class="under-title">
-            <div class="buttons">
-              <a href="/" class="btn-default">
-                <span>Стать куратором</span>
-                <img src="./src/images/arrow.png" alt="">
-                <div class="btn-pro"></div>
-              </a>
-              <a href="/" class="btn-default ms-3">
-                <span>Стать участником</span>
-                <img src="./src/images/arrow.png" alt="">
-                <div class="btn-pro"></div>
-              </a>
-            </div>
-            <div class="text">
-              <div>Ранг куратора — от Изумрудного <br> директора и выше.</div>
-              <div class="lighten">Куратор участвует в smm—марафоне <br> сам и поддерживает свою команду</div>
-            </div>
+    <div
+      class="h__top d-flex justify-content-between align-items-center text-uppercase d-none d-md-flex p-3 pb-xl-0 pt-xl-4 px-xl-5">
+      <a href="/" class="d-flex align-items-center"><img src="./src/images/h__top_quest.png" alt="" class="me-2">
+        Задать вопрос</a>
+      <a href="/" class="d-flex align-items-center"><img src="./src/images/h__top_user.png" alt="" class="me-2">
+        Авторизоваться</a>
+    </div>
+    <div class="h__content row g-0">
+      <div class="h__content_space"></div>
+      <div class="h__content_text">
+        <div class="title-1">Как вести соцсети, чтобы <br>в команду приходили новички?</div>
+        <h1 class="title-2 text-uppercase fw-bold">#Pro_Движение</h1>
+        <h2 class="title-3 text-uppercase fw-bold">SMM—марафон для дистрибьюторов Coral Club</h2>
+        <div class="under-title">
+          <div class="buttons text-end">
+            <a href="/" class="btn-default">
+              <span>Стать куратором</span>
+              <img src="./src/images/arrow.png" alt="">
+              <div class="btn-pro"></div>
+            </a>
+            <a href="/" class="btn-default ms-0 mt-4 ms-xxl-3">
+              <span>Стать участником</span>
+              <img src="./src/images/arrow.png" alt="">
+              <div class="btn-pro"></div>
+            </a>
+          </div>
+          <div class="text">
+            <div>Ранг куратора — от Изумрудного <br> директора и выше.</div>
+            <div class="lighten">Куратор участвует в smm—марафоне <br> сам и поддерживает свою команду</div>
           </div>
         </div>
-        <div class="h__content_img col-xxl-5">
-          <img src="./src/images/h__phone_desk.png" class="img-fluid" alt="">
-        </div>
+      </div>
+      <div class="h__content_img">
+        <img src="./src/images/h__phone_desk.png" class="img-fluid d-none d-xl-block" alt="">
+        <img src="./src/images/h__phone_lap.png" class="img-fluid d-sm-block d-xl-none" alt="">
       </div>
     </div>
   </header>
@@ -59,8 +60,8 @@
   <section class="s-1">
     <h2 class="d-none d-md-block text-uppercase text-center fw-bold">Включаемся в онлайн-обучение и движемся <br> от
       простого к сложному</h2>
-    <h2 class="d-block d-md-none text-uppercase text-center">Развитие на каждом этапе:</h2>
-    <div class="row s-1__px400">
+    <h2 class="d-block d-md-none text-uppercase text-center fw-bold">Развитие на каждом этапе:</h2>
+    <div class="row s-1__px-custom">
       <div class="col-12 col-md-6 col-xl-4 px-4 mb-80">
         <div class="s-1__substrate position-relative">
           <img src="./src/images/img1-hov1.png" alt="" class="img-hover h-1">
@@ -193,13 +194,32 @@
     <h2 class="text-center text-uppercase fw-bold">спикеры марафона</h2>
     <h3 class="text-center">Приглашенные эксперты и лидеры Coral Club </h3>
     <div class="s-3__slider">
-      <div class="s-3__slider_item active">
+      <div class="s-3__slider_item">
         <div class="s-3__slider_item_img">
           <img src="./src/images/s-3__man.png" alt="" class="img-fluid">
         </div>
         <div class="s-3__slider_item_info text-center">
           <div class="title fw-bold text-uppercase mb-4">Дмитрий<br> Наумовец</div>
-          <div class="desc">Руководитель отдела внешних <br> и внутренних коммуникаций <br> в Яндексе. Работал <br> с «М.Видео», «Белый ветер»</div>
+          <div class="desc">Руководитель отдела внешних <br> и внутренних коммуникаций <br> в Яндексе. Работал <br> с
+            «М.Видео», «Белый ветер»</div>
+        </div>
+      </div>
+      <div class="s-3__slider_item">
+        <div class="s-3__slider_item_img">
+          <img src="./src/images/s-3__man.png" alt="" class="img-fluid">
+        </div>
+        <div class="s-3__slider_item_info text-center">
+          <div class="title fw-bold text-uppercase mb-4">Константин<br> Константинович</div>
+          <div class="desc">Руководитель</div>
+        </div>
+      </div>
+      <div class="s-3__slider_item">
+        <div class="s-3__slider_item_img">
+          <img src="./src/images/s-3__man.png" alt="" class="img-fluid">
+        </div>
+        <div class="s-3__slider_item_info text-center">
+          <div class="title fw-bold text-uppercase mb-4">Константин<br> Константинович</div>
+          <div class="desc">Руководитель</div>
         </div>
       </div>
       <div class="s-3__slider_item">
@@ -234,7 +254,7 @@
   #корал
   <section class="s-4">
     <h2 class="text-center text-uppercase fw-bold">Ты получишь</h2>
-    <div class="row s-4__px230">
+    <div class="row s-4__px-custom">
       <div class="col-12 col-md-6 col-xl-3">
         <div class="s-4__white-block">
           <img src="./src/images/img4__1.svg" alt="" class="mb-4 img-fluid">
@@ -265,7 +285,7 @@
   </section>
   <section class="s-5">
     <h2 class="text-center text-uppercase fw-bold">Механика марафона</h2>
-    <div class="row s-5__px160">
+    <div class="row s-5__px-custom">
       <div class="col-3">
         <div class="s-5__white-block">
           <div class="s-5__white-block_company fw-bold">coralclub</div>
@@ -378,7 +398,7 @@
       <div class="s-7__dropdown_number">06</div>
       <div class="s-7__dropdown_shevron"></div>
       <div class="s-7__dropdown_line"></div>
-    </div>  
+    </div>
     <div class="s-7_questions text-center fw-bold">Остались вопросы?</div>
     <div class="text-center">
       <a href="/" class="btn-default">
@@ -391,7 +411,8 @@
   <footer class="footer">
     <div class="row align-items-center footer__cba">
       <div class="col-12 col-md-8 col-xl-10 footer__cba_info">
-        #cba_online - проект обучающей платформы Coral Business Academy <br> про современные тренды продвижения в didgital-пространстве.
+        #cba_online - проект обучающей платформы Coral Business Academy <br> про современные тренды продвижения в
+        didgital-пространстве.
       </div>
       <div class="col-12 col-md-4 col-xl-2 footer__cba_logo text-right">
         <img src="./src/images/logo.png" alt="" class="img-fluid">
@@ -414,7 +435,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
-  <!-- <script src="./src/script/script.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <script src="./src/script/script.js"></script>
 </body>
 
 </html>

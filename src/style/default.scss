@@ -23,21 +23,13 @@ a {
         color: $maincolor1;
     }
 }
-.container-fluid {
-    padding: 0;
-}
 
 @media (max-width: 1200px) {
     html {
         font-size: 14px;
     }
-    container-fluid {
-        padding: 0 30px;
-    }
 }
 
 @media (max-width: 768px) {
-    container-fluid {
-        padding: 0 10px;
-    }
+
 }
