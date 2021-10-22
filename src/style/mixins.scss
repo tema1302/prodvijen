@@ -5,27 +5,33 @@
     padding: $py $px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-bottom: $mb;
 }
+
 @mixin trans {
     transition: all 0.5s ease;
 }
+
 @mixin XY-flex-align($fl: flex) {
     display: $fl;
     align-items: center;
     justify-content: center;
 }
+
 @mixin XY-abs-align($fl: flex) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 @mixin btn-default($bg-btn) {
     display: inline-flex;
     align-items: center;
     position: relative;
     padding: 18px 25px;
+
     span {
         text-transform: uppercase;
         font-family: "Proxima Nova Rg", serif;
@@ -34,13 +40,14 @@
         font-size: 20px;
         z-index: 2;
     }
+
     img {
         margin-left: 35px;
         z-index: 2;
     }
+
     .btn-pro {
         position: absolute;
-        @include XY-flex-align(inline-flex);
         background: $bg-btn;
         border: 2px solid $maincolor1;
         border-radius: $radius1;
@@ -50,6 +57,7 @@
         z-index: 1;
         @include trans;
     }
+
     &:hover {
         .btn-pro {
             width: 100%;

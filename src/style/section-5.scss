@@ -1,5 +1,6 @@
 @import "varibles.scss";
 @import "mixins.scss";
+
 .s-5 {
   background-color: $bgcolor1;
   color: $maincolor1;
@@ -10,9 +11,15 @@
     margin-bottom: 80px;
   }
 
-  &__px-custom {
+  &__slider {
     padding: 0 160px;
     margin-bottom: 100px;
+
+    &_item {
+      flex: 0 0 auto;
+      width: 25%;
+      padding: 10px 20px 10px 25px;
+    }
   }
 
   &__white-block {
@@ -34,7 +41,7 @@
     }
 
     &_info {
-      padding-left: 20px;
+      padding: 0 10px 0 20px;
       flex-grow: 1;
 
       .title {
@@ -60,6 +67,148 @@
     .text {
       font-size: 14px;
       padding-left: 25px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .s-5 {
+    padding: 60px 5%;
+
+    &__slider {
+      padding: 0;
+    }
+
+    &__buttons {
+      padding: 0;
+    }
+
+    &__white-block {
+      &_info {
+
+        .title {
+          font-size: 30px;
+        }
+
+        .desc {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .s-5 {
+
+    h2 {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+
+    &__slider {
+      padding: 40px 0;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 -6% 40px -42px;
+
+      &_item {
+        scroll-snap-align: start;
+        width: 40%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .s-5 {
+    h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    &__slider {
+      margin: 0 -7% 30px -38px;
+      &_item {
+        width: 44%;
+      }
+    }
+
+    &__white-block_info {
+      .title {
+        font-size: 24px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .s-5 {
+    &__slider {
+      margin: 0 -7% 10px -28px;
+
+      &_item {
+        width: 60%;
+        padding: 10px 10px 10px 25px;
+      }
+    }
+
+    &__white-block_info {
+      .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 476px) {
+  .s-5 {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    &__slider {
+      padding: 20px 10px;
+
+      &_item {
+        width: 92%;
+        padding: 10px 0 10px 25px;
+      }
+    }
+
+    &__buttons {
+      .btn-default {
+        padding: 18px 19px 18px 29px;
+
+        span {
+          font-size: 15px;
+        }
+
+        .btn-pro {
+          width: 68px;
+          height: 52px;
+        }
+
+        &:first-child {
+          margin-bottom: 25px;
+        }
+      }
     }
   }
 }

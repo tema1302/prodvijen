@@ -1,18 +1,73 @@
 @import "varibles.scss";
 
-.footer {
+footer {
   background-color: $bgcolor1;
   padding: 60px 160px 30px;
-  &__cba {
+
+  .f__cba {
     margin-bottom: 40px;
+
     &_info {
       font-size: 26px;
     }
   }
-  &__links {
+
+  .f__links {
     a {
       display: block;
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  footer {
+    padding: 50px 8%;
+
+    .f__cba {
+      margin-bottom: 40px;
+
+      br {
+        display: none;
+      }
+
+      &_info {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
+
+    .f__cba {
+      margin-bottom: 0;
+
+      &_info {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 476px) {
+  footer {
+    .f__cba {
+      margin-bottom: 0;
+
+      &_info {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      &_logo {
+        img {
+          width: 270px;
+        }
+      }
     }
   }
 }

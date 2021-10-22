@@ -129,8 +129,6 @@ header {
         }
 
         .under-title {
-          width: 350px;
-
           .buttons {
             margin-bottom: 20px;
           }
@@ -147,11 +145,8 @@ header {
 
 @media (max-width: 768px) {
   header {
-    background-position: 60% 100%;
+    background-position: 50% 100%;
 
-    .h__top {
-      
-    }
     .h__content {
       padding: 20px 0 40px 20px;
 
@@ -164,11 +159,28 @@ header {
         }
 
         .title-2 {
-          font-size: 60px;
+          font-size: 65px;
         }
 
-        .title-1 {
-          font-size: 24px;
+        .title-3 {
+          font-size: 22px;
+          margin-bottom: 90px;
+        }
+
+        .under-title {
+          width: 313px;
+
+          .buttons {
+            .btn-default {
+              span {
+                font-size: 18px;
+              }
+
+              &:first-child {
+                margin-bottom: 40px;
+              }
+            }
+          }
         }
       }
 
@@ -176,12 +188,112 @@ header {
         width: 0;
         margin-top: 0;
         position: relative;
+
         img {
           position: absolute;
           width: 320px;
-          top: 240px;
+          top: 200px;
           left: -320px;
           max-width: max-content;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    background-image: url(../images/h__ellipse_mob1.png);
+    background-position: 65% 100%;
+
+    .h__content {
+      padding: 20px 0 60px 20px;
+
+      &_text {
+        padding-top: 30px;
+
+        .title-2 {
+          font-size: 45px;
+        }
+
+        .title-3 {
+          font-size: 18px;
+          margin-bottom: 40px;
+        }
+
+        .under-title {
+          .buttons {
+            .btn-default {
+              span {
+                font-size: 18px;
+              }
+
+              &:first-child {
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+
+      &_img {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 476px) {
+  header {
+    background-position: 56% 100%;
+    .h__content {
+      padding: 40px 20px 80px;
+
+      &_text {
+        padding-top: 0;
+
+        .title-1 {
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+
+        .title-2 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+
+        .title-3 {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+
+        .under-title {
+          width: 100%;
+
+          .buttons {
+            .btn-default {
+              padding: 18px 19px 18px 29px;
+
+              span {
+                font-size: 15px;
+              }
+
+              .btn-pro {
+                width: 68px;
+                height: 52px;
+              }
+
+              &:first-child {
+                margin-bottom: 25px;
+              }
+            }
+
+          }
+
+          .text {
+            padding-left: 15px;
+          }
         }
       }
     }

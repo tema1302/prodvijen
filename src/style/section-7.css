@@ -10,7 +10,7 @@
 }
 
 .s-7__dropdown {
-  padding: 50px 0px;
+  padding: 50px 70px 50px 0;
   margin-bottom: 70px;
 }
 
@@ -59,7 +59,7 @@
   background-color: #141414;
 }
 
-.s-7_questions {
+.s-7__questions {
   font-size: 35px;
   padding-top: 50px;
   margin-bottom: 50px;
@@ -93,15 +93,6 @@
 
 .s-7 .btn-default .btn-pro {
   position: absolute;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #f2cb05;
   border: 2px solid #141414;
   border-radius: 28px;
@@ -115,5 +106,102 @@
 
 .s-7 .btn-default:hover .btn-pro {
   width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .s-7 {
+    padding: 80px 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-7 {
+    padding: 60px 8%;
+  }
+  .s-7 h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .s-7__dropdown {
+    padding: 25px 70px 25px 0;
+    margin-bottom: 50px;
+  }
+  .s-7__dropdown_text {
+    font-size: 20px;
+  }
+  .s-7__dropdown_number {
+    left: -2px;
+    bottom: 8px;
+    font-size: 64px;
+  }
+  .s-7__dropdown_shevron:after {
+    bottom: 20px;
+    right: 38px;
+    width: 12px;
+    height: 2px;
+  }
+  .s-7__dropdown_shevron:before {
+    bottom: 20px;
+    right: 30px;
+    width: 12px;
+    height: 2px;
+  }
+  .s-7__questions {
+    font-size: 28px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 476px) {
+  .s-7 {
+    padding: 40px 20px;
+  }
+  .s-7 h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .s-7__dropdown {
+    padding: 20px 40px 20px 0;
+    margin-bottom: 30px;
+  }
+  .s-7__dropdown_text {
+    font-size: 14px;
+  }
+  .s-7__dropdown_number {
+    left: -5px;
+    bottom: 2px;
+    font-size: 55px;
+  }
+  .s-7__dropdown_shevron:after {
+    bottom: 15px;
+    right: 21px;
+    width: 10px;
+    height: 2px;
+  }
+  .s-7__dropdown_shevron:before {
+    bottom: 15px;
+    right: 15px;
+    width: 10px;
+    height: 2px;
+  }
+  .s-7 .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
+  .s-7 .btn-default span {
+    font-size: 15px;
+  }
+  .s-7 .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
+  }
+  .s-7 .btn-default:first-child {
+    margin-bottom: 25px;
+  }
+  .s-7__questions {
+    font-size: 18px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=section-7.css.map */

@@ -11,7 +11,7 @@
   }
 
   &__dropdown {
-    padding: 50px 0px;
+    padding: 50px 70px 50px 0;
     margin-bottom: 70px;
 
     &_text {
@@ -55,7 +55,7 @@
       background-color: $maincolor1;
     }
   }
-  &_questions {
+  &__questions {
     font-size: 35px;
     padding-top: 50px;
     margin-bottom: 50px;
@@ -63,5 +63,119 @@
   .btn-default {
     @include btn-default($bgcolor1);
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .s-7 {
+    padding: 80px 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-7 {
+    padding: 60px 8%;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__dropdown {
+      padding: 25px 70px 25px 0;
+      margin-bottom: 50px;
+  
+      &_text {
+        font-size: 20px;
+      }
+      &_number {
+        left: -2px;
+        bottom: 8px;
+        font-size: 64px;
+      }
+      &_shevron {
+        &:after {
+          bottom: 20px;
+          right: 38px;
+          width: 12px;
+          height: 2px;
+        }
+        &:before {
+          bottom: 20px;
+          right: 30px;
+          width: 12px;
+          height: 2px;
+        }
+      }
+    }
+
+    &__questions {
+      font-size: 28px;
+      padding-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 476px) {
+  .s-7 {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    &__dropdown {
+      padding: 20px 40px 20px 0;
+      margin-bottom: 30px;
+  
+      &_text {
+        font-size: 14px;
+      }
+      &_number {
+        left: -5px;
+        bottom: 2px;
+        font-size: 55px;
+      }
+      &_shevron {
+        &:after {
+          bottom: 15px;
+          right: 21px;
+          width: 10px;
+          height: 2px;
+        }
+        &:before {
+          bottom: 15px;
+          right: 15px;
+          width: 10px;
+          height: 2px;
+        }
+      }
+    }
+
+    .btn-default {
+      padding: 18px 19px 18px 29px;
+
+      span {
+        font-size: 15px;
+      }
+
+      .btn-pro {
+        width: 68px;
+        height: 52px;
+      }
+
+      &:first-child {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__questions {
+      font-size: 18px;
+      padding-top: 50px;
+      margin-bottom: 30px;
+    }
   }
 }

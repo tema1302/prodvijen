@@ -5,6 +5,7 @@
 .s-6__title {
   color: #E4326C;
   font-size: 40px;
+  margin-bottom: 15px;
 }
 
 .s-6__desc {
@@ -38,15 +39,6 @@
 
 .s-6 .btn-default .btn-pro {
   position: absolute;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #f2cb05;
   border: 2px solid #141414;
   border-radius: 28px;
@@ -60,5 +52,49 @@
 
 .s-6 .btn-default:hover .btn-pro {
   width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .s-6 {
+    padding: 60px 8%;
+  }
+  .s-6__desc br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-6__title {
+    font-size: 36px;
+  }
+  .s-6__desc {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 476px) {
+  .s-6 {
+    padding: 60px 3%;
+  }
+  .s-6__title {
+    font-size: 20px;
+  }
+  .s-6__desc {
+    font-size: 14px;
+  }
+  .s-6 .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
+  .s-6 .btn-default span {
+    font-size: 15px;
+  }
+  .s-6 .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
+  }
+  .s-6 .btn-default:first-child {
+    margin-bottom: 25px;
+  }
 }
 /*# sourceMappingURL=section-6.css.map */

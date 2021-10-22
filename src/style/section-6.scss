@@ -1,11 +1,13 @@
 @import "varibles.scss";
 @import "mixins.scss";
+
 .s-6 {
   padding: 60px 400px;
 
   &__title {
     color: $basecolor;
     font-size: 40px;
+    margin-bottom: 15px;
   }
 
   &__desc {
@@ -14,5 +16,62 @@
 
   .btn-default {
     @include btn-default($bgcolor1);
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .s-6 {
+    padding: 60px 8%;
+
+    &__desc {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .s-6 {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__desc {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 476px) {
+  .s-6 {
+    padding: 60px 3%;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__desc {
+      font-size: 14px;
+    }
+
+    .btn-default {
+      padding: 18px 19px 18px 29px;
+
+      span {
+        font-size: 15px;
+      }
+
+      .btn-pro {
+        width: 68px;
+        height: 52px;
+      }
+
+      &:first-child {
+        margin-bottom: 25px;
+      }
+    }
   }
 }
