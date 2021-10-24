@@ -50,6 +50,10 @@ footer .f__links a {
   }
   footer .f__cba_info {
     font-size: 20px;
+    text-align: center;
+  }
+  footer .f__cba_logo img {
+    width: 270px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

@@ -132,6 +132,9 @@
   .s-5__white-block_info .desc br {
     display: none;
   }
+  .s-5__buttons {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1200px) {

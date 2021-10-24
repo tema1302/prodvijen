@@ -9,28 +9,54 @@
   margin-bottom: 60px;
 }
 
+.s-7__accordion_item {
+  margin-bottom: 70px;
+}
+
+.s-7__accordion_item_content {
+  padding-bottom: 40px;
+  padding-right: 70px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
 .s-7__dropdown {
   padding: 50px 70px 50px 0;
-  margin-bottom: 70px;
+  cursor: pointer;
 }
 
 .s-7__dropdown_text {
   font-size: 38px;
 }
 
+.s-7__dropdown .relative-wrapper {
+  position: relative;
+  bottom: 117px;
+}
+
 .s-7__dropdown_number {
   position: absolute;
   left: -10px;
-  bottom: 13px;
   font-size: 130px;
   color: rgba(20, 20, 20, 0.1);
+}
+
+.s-7__dropdown_shevron {
+  position: absolute;
+  padding: 20px;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transform-origin: 57% 50%;
+          transform-origin: 57% 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .s-7__dropdown_shevron:after {
   content: '';
   position: absolute;
-  bottom: 40px;
-  right: 50px;
+  right: 14px;
   width: 15px;
   height: 3px;
   background-color: #141414;
@@ -41,8 +67,6 @@
 .s-7__dropdown_shevron:before {
   content: '';
   position: absolute;
-  bottom: 40px;
-  right: 40px;
   width: 15px;
   height: 3px;
   background-color: #141414;
@@ -57,6 +81,11 @@
   bottom: 0;
   left: 0;
   background-color: #141414;
+}
+
+.s-7__dropdown:not(.collapsed) .s-7__dropdown_shevron {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .s-7__questions {
@@ -122,27 +151,38 @@
     font-size: 40px;
     margin-bottom: 40px;
   }
+  .s-7__accordion_item {
+    margin-bottom: 50px;
+  }
+  .s-7__accordion_item_content {
+    padding-bottom: 20px;
+    padding-right: 50px;
+    font-size: 16px;
+  }
   .s-7__dropdown {
     padding: 25px 70px 25px 0;
-    margin-bottom: 50px;
   }
   .s-7__dropdown_text {
     font-size: 20px;
   }
+  .s-7__dropdown .relative-wrapper {
+    position: relative;
+    bottom: 55px;
+  }
   .s-7__dropdown_number {
     left: -2px;
-    bottom: 8px;
     font-size: 64px;
   }
+  .s-7__dropdown_shevron {
+    right: 10px;
+    bottom: 3px;
+  }
   .s-7__dropdown_shevron:after {
-    bottom: 20px;
-    right: 38px;
+    right: 15px;
     width: 12px;
     height: 2px;
   }
   .s-7__dropdown_shevron:before {
-    bottom: 20px;
-    right: 30px;
     width: 12px;
     height: 2px;
   }
@@ -161,27 +201,38 @@
     font-size: 18px;
     margin-bottom: 30px;
   }
+  .s-7__accordion_item {
+    margin-bottom: 30px;
+  }
+  .s-7__accordion_item_content {
+    padding-bottom: 10px;
+    padding-right: 40px;
+    font-size: 14px;
+  }
   .s-7__dropdown {
     padding: 20px 40px 20px 0;
-    margin-bottom: 30px;
   }
   .s-7__dropdown_text {
     font-size: 14px;
   }
+  .s-7__dropdown .relative-wrapper {
+    bottom: 48px;
+  }
   .s-7__dropdown_number {
     left: -5px;
-    bottom: 2px;
     font-size: 55px;
   }
+  .s-7__dropdown_shevron {
+    right: 5px;
+    bottom: 3px;
+    padding: 16px;
+  }
   .s-7__dropdown_shevron:after {
-    bottom: 15px;
-    right: 21px;
+    right: 12px;
     width: 10px;
     height: 2px;
   }
   .s-7__dropdown_shevron:before {
-    bottom: 15px;
-    right: 15px;
     width: 10px;
     height: 2px;
   }

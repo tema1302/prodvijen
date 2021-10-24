@@ -4,6 +4,6 @@ $(document).ready(function(){
         arrows: false,
         slidesToShow: 3,
         variableWidth: true,
-        touchThreshold: 10
+        touchThreshold: 20,
     });
 });  

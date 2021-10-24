@@ -222,6 +222,7 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
+    padding: 0 10px;
   }
   .s-1__slider_row .s-1__white-block {
     min-height: 225px;

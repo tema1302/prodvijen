@@ -1,5 +1,6 @@
 @import "varibles.scss";
 @import "mixins.scss";
+
 .s-7 {
   background-color: $bgcolor2;
   color: $maincolor1;
@@ -10,42 +11,66 @@
     margin-bottom: 60px;
   }
 
+  &__accordion_item {
+    margin-bottom: 70px;
+
+    &_content {
+      padding-bottom: 40px;
+      padding-right: 70px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+
   &__dropdown {
     padding: 50px 70px 50px 0;
-    margin-bottom: 70px;
+    cursor: pointer;
 
     &_text {
       font-size: 38px;
     }
+
+    .relative-wrapper {
+      position: relative;
+      bottom: 117px;
+    }
+
     &_number {
       position: absolute;
       left: -10px;
-      bottom: 13px;
       font-size: 130px;
       color: rgba(20, 20, 20, 0.1);
     }
+
     &_shevron {
+      position: absolute;
+      padding: 20px;
+      bottom: 30px;
+      right: 10px;
+      cursor: pointer;
+      transform-origin: 57% 50%;
+      @include trans;
+
       &:after {
         content: '';
         position: absolute;
-        bottom: 40px;
-        right: 50px;
+        right: 14px;
         width: 15px;
         height: 3px;
         background-color: $maincolor1;
         transform: rotate(45deg);
       }
+
       &:before {
         content: '';
         position: absolute;
-        bottom: 40px;
-        right: 40px;
         width: 15px;
         height: 3px;
         background-color: $maincolor1;
         transform: rotate(-45deg);
       }
     }
+
     &_line {
       position: absolute;
       width: 100%;
@@ -54,12 +79,20 @@
       left: 0;
       background-color: $maincolor1;
     }
+
+    &:not(.collapsed) {
+      .s-7__dropdown_shevron {
+        transform: rotate(-180deg);
+      }
+    }
   }
+
   &__questions {
     font-size: 35px;
     padding-top: 50px;
     margin-bottom: 50px;
   }
+
   .btn-default {
     @include btn-default($bgcolor1);
     margin: 0 auto;
@@ -81,28 +114,44 @@
       margin-bottom: 40px;
     }
 
+    &__accordion_item {
+      margin-bottom: 50px;
+
+      &_content {
+        padding-bottom: 20px;
+        padding-right: 50px;
+        font-size: 16px;
+      }
+    }
+
     &__dropdown {
       padding: 25px 70px 25px 0;
-      margin-bottom: 50px;
-  
+
       &_text {
         font-size: 20px;
       }
+
+      .relative-wrapper {
+        position: relative;
+        bottom: 55px;
+      }
+
       &_number {
         left: -2px;
-        bottom: 8px;
         font-size: 64px;
       }
+
       &_shevron {
+        right: 10px;
+        bottom: 3px;
+
         &:after {
-          bottom: 20px;
-          right: 38px;
+          right: 15px;
           width: 12px;
           height: 2px;
         }
+
         &:before {
-          bottom: 20px;
-          right: 30px;
           width: 12px;
           height: 2px;
         }
@@ -127,28 +176,44 @@
       margin-bottom: 30px;
     }
 
+    &__accordion_item {
+      margin-bottom: 30px;
+
+      &_content {
+        padding-bottom: 10px;
+        padding-right: 40px;
+        font-size: 14px;
+      }
+    }
+
     &__dropdown {
       padding: 20px 40px 20px 0;
-      margin-bottom: 30px;
-  
+
       &_text {
         font-size: 14px;
       }
+
+      .relative-wrapper {
+        bottom: 48px;
+      }
+
       &_number {
         left: -5px;
-        bottom: 2px;
         font-size: 55px;
       }
+
       &_shevron {
+        right: 5px;
+        bottom: 3px;
+        padding: 16px;
+
         &:after {
-          bottom: 15px;
-          right: 21px;
+          right: 12px;
           width: 10px;
           height: 2px;
         }
+
         &:before {
-          bottom: 15px;
-          right: 15px;
           width: 10px;
           height: 2px;
         }
