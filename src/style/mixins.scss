@@ -27,40 +27,89 @@
 }
 
 @mixin btn-default($bg-btn) {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    padding: 18px 25px;
+    .btn-default {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        padding: 18px 25px;
 
-    span {
-        text-transform: uppercase;
-        font-family: "Proxima Nova Rg", serif;
-        letter-spacing: 1px;
-        font-weight: bold;
-        font-size: 20px;
-        z-index: 2;
-    }
+        span {
+            text-transform: uppercase;
+            font-family: "Proxima Nova Rg", serif;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: 20px;
+            z-index: 2;
+        }
 
-    img {
-        margin-left: 35px;
-        z-index: 2;
-    }
+        img {
+            margin-left: 35px;
+            z-index: 2;
+        }
 
-    .btn-pro {
-        position: absolute;
-        background: $bg-btn;
-        border: 2px solid $maincolor1;
-        border-radius: $radius1;
-        width: 78px;
-        height: 60px;
-        right: 0;
-        z-index: 1;
-        @include trans;
-    }
-
-    &:hover {
         .btn-pro {
-            width: 100%;
+            position: absolute;
+            background: $bg-btn;
+            border: 2px solid $maincolor1;
+            border-radius: $radius1;
+            width: 78px;
+            height: 60px;
+            right: 0;
+            z-index: 1;
+            @include trans;
+        }
+
+        & + .text {
+            @include trans;
+            opacity: 0;
+            transform: translateY(-20px);
+            margin-top: 25px;
+            max-height: 0;
+        }
+
+        &:hover {
+            .btn-pro {
+                width: 100%;
+            }
+            
+            & + .text {
+                opacity: 1;
+                transform: translateY(0);
+                max-height: 120px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .btn-default {
+            span {
+                font-size: 18px;
+            }
+
+            & + .text {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 476px) {
+        .btn-default {
+            padding: 18px 19px 18px 29px;
+
+            span {
+                font-size: 15px;
+            }
+
+            .btn-pro {
+                width: 68px;
+                height: 52px;
+            }
+
+            & + .text {
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
         }
     }
 }

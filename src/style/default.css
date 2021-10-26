@@ -28,9 +28,91 @@ a:hover {
   color: #141414;
 }
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 14px;
+.btn-default {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 18px 25px;
+}
+
+.btn-default span {
+  text-transform: uppercase;
+  font-family: "Proxima Nova Rg", serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.btn-default img {
+  margin-left: 35px;
+  z-index: 2;
+}
+
+.btn-default .btn-pro {
+  position: absolute;
+  background: #f2cb05;
+  border: 2px solid #141414;
+  border-radius: 28px;
+  width: 78px;
+  height: 60px;
+  right: 0;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn-default + .text {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  margin-top: 25px;
+}
+
+.btn-default + .text + .text {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.btn-default:hover .btn-pro {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .btn-default span {
+    font-size: 18px;
+  }
+  .btn-default + .text {
+    margin-top: 20px;
+  }
+  .btn-default:first-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 476px) {
+  .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
+  .btn-default span {
+    font-size: 15px;
+  }
+  .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
+  }
+  .btn-default + .text {
+    margin-top: 15px;
+  }
+  .btn-default:first-child {
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=default.css.map */

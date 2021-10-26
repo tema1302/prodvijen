@@ -1,0 +1,247 @@
+header {
+  background-color: #f2cb05;
+  background-image: url(../images/h__ellipse_desk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding: 0 0 120px;
+  color: #141414;
+}
+
+header .h__content {
+  font-weight: bold;
+}
+
+header .h__content_space {
+  width: 140px;
+}
+
+header .h__content_text {
+  padding-top: 165px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 46%;
+}
+
+header .h__content_text .title-1 {
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+header .h__content_text .title-2 {
+  font-size: 92px;
+  color: #E4326C;
+  margin-bottom: 15px;
+}
+
+header .h__content_text .title-3 {
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+header .h__content_text .under-title .buttons {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .h__content_text .under-title .text {
+  font-size: 14px;
+  padding-left: 25px;
+}
+
+header .h__content_text .under-title .text .lighten {
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+header .h__content_img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 43%;
+}
+
+@media (max-width: 1600px) {
+  header {
+    padding: 0 0 20px;
+    background-size: cover;
+  }
+  header .h__content_space {
+    width: 8%;
+  }
+  header .h__content_text {
+    width: 55%;
+    padding-top: 50px;
+  }
+  header .h__content_text .title-1 {
+    font-size: 24px;
+  }
+  header .h__content_text .title-2 {
+    font-size: 60px;
+  }
+  header .h__content_text .under-title {
+    width: 350px;
+  }
+  header .h__content_text .under-title .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header .h__content_img {
+    width: 37%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  header {
+    background-position: 50% 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    background-position: 50% 100%;
+    padding: 0;
+  }
+  header .h__content {
+    padding: 60px 0 60px 60px;
+  }
+  header .h__content_space {
+    width: 0;
+  }
+  header .h__content_text {
+    width: 50%;
+    padding-top: 0;
+  }
+  header .h__content_text .title-1 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  header .h__content_text .title-2 {
+    font-size: 55px;
+  }
+  header .h__content_text .under-title .buttons {
+    margin-bottom: 20px;
+  }
+  header .h__content_img {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  header .h__content_img {
+    width: 50%;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-position: 50% 100%;
+  }
+  header .h__content {
+    padding: 20px 0 40px 20px;
+  }
+  header .h__content_text {
+    padding-top: 35px;
+    width: 100%;
+  }
+  header .h__content_text .title-1 {
+    font-size: 18px;
+  }
+  header .h__content_text .title-2 {
+    font-size: 65px;
+  }
+  header .h__content_text .title-3 {
+    font-size: 22px;
+    margin-bottom: 90px;
+  }
+  header .h__content_text .under-title {
+    width: 313px;
+  }
+  header .h__content_img {
+    width: 0;
+    margin-top: 0;
+    position: relative;
+  }
+  header .h__content_img img {
+    position: absolute;
+    width: 320px;
+    top: 200px;
+    left: -320px;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    background-image: url(../images/h__ellipse_mob1.png);
+    background-position: 65% 100%;
+  }
+  header .h__content {
+    padding: 20px 0 60px 20px;
+  }
+  header .h__content_text {
+    padding-top: 30px;
+  }
+  header .h__content_text .title-2 {
+    font-size: 45px;
+  }
+  header .h__content_text .title-3 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  header .h__content_img {
+    display: none;
+  }
+}
+
+@media (max-width: 476px) {
+  header {
+    background-position: 56% 100%;
+  }
+  header .h__content {
+    padding: 40px 20px 80px;
+  }
+  header .h__content_text {
+    padding-top: 0;
+  }
+  header .h__content_text .title-1 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  header .h__content_text .title-2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  header .h__content_text .title-3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  header .h__content_text .under-title {
+    width: 100%;
+  }
+  header .h__content_text .under-title .text {
+    padding-left: 15px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

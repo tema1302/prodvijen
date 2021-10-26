@@ -1,14 +1,18 @@
 @import "varibles.scss";
 @import "font-family.css";
+@import "mixins.scss";
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: 1.2;
 }
+
 html {
     overflow-x: hidden;
 }
+
 body {
     font-size: 16px;
     color: $maincolor1;
@@ -16,20 +20,14 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
 }
+
 a {
     text-decoration: none;
     color: $maincolor1;
+
     &:hover {
         color: $maincolor1;
     }
 }
 
-@media (max-width: 1200px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-
-}
+@include btn-default($bgcolor1);

@@ -65,7 +65,18 @@
 }
 
 .s-5__buttons {
-  padding: 0 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
 }
 
 .s-5__buttons .btn-default {
@@ -77,7 +88,6 @@
           align-items: center;
   position: relative;
   padding: 18px 25px;
-  margin-bottom: 25px;
 }
 
 .s-5__buttons .btn-default span {
@@ -107,8 +117,52 @@
   transition: all 0.5s ease;
 }
 
+.s-5__buttons .btn-default + .text {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  margin-top: 25px;
+  max-height: 0;
+}
+
 .s-5__buttons .btn-default:hover .btn-pro {
   width: 100%;
+}
+
+.s-5__buttons .btn-default:hover + .text {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  max-height: 120px;
+}
+
+@media (max-width: 768px) {
+  .s-5__buttons .btn-default span {
+    font-size: 18px;
+  }
+  .s-5__buttons .btn-default + .text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 476px) {
+  .s-5__buttons .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
+  .s-5__buttons .btn-default span {
+    font-size: 15px;
+  }
+  .s-5__buttons .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
+  }
+  .s-5__buttons .btn-default + .text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
 }
 
 .s-5__buttons .text {
@@ -131,9 +185,6 @@
   }
   .s-5__white-block_info .desc br {
     display: none;
-  }
-  .s-5__buttons {
-    padding: 0;
   }
 }
 
@@ -190,6 +241,15 @@
   }
   .s-5__white-block_info .desc {
     font-size: 14px;
+  }
+  .s-5__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 

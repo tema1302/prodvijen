@@ -12,48 +12,6 @@
   font-size: 30px;
 }
 
-.s-6 .btn-default {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  padding: 18px 25px;
-}
-
-.s-6 .btn-default span {
-  text-transform: uppercase;
-  font-family: "Proxima Nova Rg", serif;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 20px;
-  z-index: 2;
-}
-
-.s-6 .btn-default img {
-  margin-left: 35px;
-  z-index: 2;
-}
-
-.s-6 .btn-default .btn-pro {
-  position: absolute;
-  background: #f2cb05;
-  border: 2px solid #141414;
-  border-radius: 28px;
-  width: 78px;
-  height: 60px;
-  right: 0;
-  z-index: 1;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.s-6 .btn-default:hover .btn-pro {
-  width: 100%;
-}
-
 @media (max-width: 1400px) {
   .s-6 {
     padding: 60px 8%;
@@ -82,19 +40,6 @@
   }
   .s-6__desc {
     font-size: 14px;
-  }
-  .s-6 .btn-default {
-    padding: 18px 19px 18px 29px;
-  }
-  .s-6 .btn-default span {
-    font-size: 15px;
-  }
-  .s-6 .btn-default .btn-pro {
-    width: 68px;
-    height: 52px;
-  }
-  .s-6 .btn-default:first-child {
-    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=section-6.css.map */

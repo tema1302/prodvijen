@@ -1,5 +1,5 @@
 .s-4 {
-  background-color: #E5E5E5;
+  background-color: #F2EFEA;
   color: #141414;
   padding: 100px 0;
 }
@@ -7,6 +7,7 @@
 .s-4__logo {
   top: -150px;
   right: 0;
+  width: 560px;
 }
 
 .s-4 h2 {
