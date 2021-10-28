@@ -4,8 +4,12 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding: 0 0 120px;
+  padding: 0;
   color: #141414;
+}
+
+header .h__top {
+  font-size: 13px;
 }
 
 header .h__content {
@@ -13,31 +17,31 @@ header .h__content {
 }
 
 header .h__content_space {
-  width: 140px;
+  width: 10.2vw;
 }
 
 header .h__content_text {
-  padding-top: 165px;
+  padding-top: 15.7vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 46%;
+  width: 44%;
 }
 
 header .h__content_text .title-1 {
-  font-size: 28px;
-  margin-bottom: 80px;
+  font-size: 1.56vw;
+  margin-bottom: 6.2vh;
 }
 
 header .h__content_text .title-2 {
-  font-size: 92px;
+  font-size: 5.1vw;
   color: #E4326C;
   margin-bottom: 15px;
 }
 
 header .h__content_text .title-3 {
-  font-size: 32px;
-  margin-bottom: 70px;
+  font-size: 1.66vw;
+  margin-bottom: 10.6vh;
 }
 
 header .h__content_text .under-title .buttons {
@@ -50,9 +54,13 @@ header .h__content_text .under-title .buttons {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .h__content_text .under-title .buttons .b-1 {
+  margin-right: 21px;
 }
 
 header .h__content_text .under-title .text {
@@ -69,42 +77,24 @@ header .h__content_img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 43%;
+  width: 45%;
+  -webkit-transform: translateY(-4vh);
+          transform: translateY(-4vh);
 }
 
 @media (max-width: 1600px) {
   header {
-    padding: 0 0 20px;
+    padding: 0;
     background-size: cover;
   }
   header .h__content_space {
-    width: 8%;
+    width: 8vw;
   }
   header .h__content_text {
-    width: 55%;
-    padding-top: 50px;
-  }
-  header .h__content_text .title-1 {
-    font-size: 24px;
-  }
-  header .h__content_text .title-2 {
-    font-size: 60px;
-  }
-  header .h__content_text .under-title {
-    width: 350px;
-  }
-  header .h__content_text .under-title .buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    width: 48%;
   }
   header .h__content_img {
-    width: 37%;
-    margin-top: 20px;
+    width: 43%;
   }
 }
 

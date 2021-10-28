@@ -3,15 +3,15 @@
 
 .s-1 {
   background-color: $bgcolor1;
-  padding: 3% 0;
+  margin-top: -5px;  
 
   h2 {
-    font-size: 45px;
+    font-size: 2.4vw;
     line-height: 1.5;
   }
 
   &__px-custom {
-    padding: 100px 400px;
+    padding: 17vh 19.5vw 9vh;
   }
 
   .mb-80 {
@@ -90,7 +90,7 @@
   }
 
   &__white-block {
-    @include white-box(#fefefe, 0.2, $radius2, 20px, 10px, 0px);
+    @include white-box(#fefefe, 0.2, $radius2, 20px, 18px, 0px);
     @include trans;
     flex-direction: column;
     height: 100%;
@@ -99,17 +99,21 @@
 
 @media (max-width: 1600px) {
   .s-1 {
-
-    // h2 {
-    //   font-size: 40px;
-    // }
+    padding: 5% 0 0;
+    margin-top: -1px;
 
     &__px-custom {
-      padding: 100px 8%;
+      padding: 8.1vh 9.5vw 7vh;
+    }
+
+    .mb-80 {
+      margin-bottom: 65px;
     }
 
     &__substrate {
-      .img-hover {}
+      .img-hover {
+        transform: translate(-50%, -50%) scale(0.75, 0.75)
+      }
 
       .desc {
         br {

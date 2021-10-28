@@ -5,7 +5,7 @@
 .s-2 {
   background-color: $bgcolor2;
   color: $maincolor2;
-  font-family: "Proxima Nova Rg", serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   padding: 100px 0;
 
   h3 {
@@ -18,6 +18,7 @@
     margin: 30px auto;
     @include white-box(#ffffff, 0.1, $radius3, 23px, 60px, 30px);
     min-height: 145px;
+    font-family: "Gilroy", sans-serif;
 
     &_img {
       img {
@@ -56,6 +57,42 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .s-2 {
+
+    h3 {
+      font-size: 26px;
+    }
+
+    &__white-block {
+      max-width: 570px;
+      min-height: 105px;
+      border-radius: 24px;
+      padding: 16px 44px;
+
+      &_img {
+        img {
+          width: 76px;
+        }
+      }
+
+      &_info {
+        padding-left: 30px;
+        .title {
+          font-size: 14px;
+        }
+        .desc {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &__after-text {
+      font-size: 26px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .s-2 {
     padding: 60px 5%;
@@ -84,11 +121,11 @@
           font-size: 28px;
         }
       }
-    }
 
-    &__after-text {
-      br {
-        display: none;
+      &__after-text {
+        br {
+          display: none;
+        }
       }
     }
   }
@@ -184,7 +221,7 @@
       &_info {
         width: 100% !important;
         padding-left: 10px;
-        
+
         .title {
           font-size: 14px;
           margin-bottom: 20px;

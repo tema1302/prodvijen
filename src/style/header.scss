@@ -6,35 +6,39 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding: 0 0 120px;
+  padding: 0;
   color: $maincolor1;
+
+  .h__top {
+    font-size: 13px;
+  }
 
   .h__content {
     font-weight: bold;
 
     &_space {
-      width: 140px;
+      width: 10.2vw;
     }
 
     &_text {
-      padding-top: 165px;
+      padding-top: 15.7vh;
       flex: 0 0 auto;
-      width: 46%;
+      width: 44%;
 
       .title-1 {
-        font-size: 28px;
-        margin-bottom: 80px;
+        font-size: 1.56vw;
+        margin-bottom: 6.2vh;
       }
 
       .title-2 {
-        font-size: 92px;
+        font-size: 5.1vw;
         color: $basecolor;
         margin-bottom: 15px;
       }
 
       .title-3 {
-        font-size: 32px;
-        margin-bottom: 70px;
+        font-size: 1.66vw;
+        margin-bottom: 10.6vh;
       }
 
       .under-title {
@@ -43,7 +47,10 @@ header {
           display: flex;
           flex-wrap: wrap;
           align-items: flex-start;
-          justify-content: center;
+          justify-content: flex-start;
+          .b-1 {
+            margin-right: 21px;
+          }
         }
 
         .text {
@@ -59,10 +66,9 @@ header {
     }
 
     &_img {
-
       flex: 0 0 auto;
-      width: 43%;
-
+      width: 45%;
+      transform: translateY(-4vh);      
     }
   }
 }
@@ -70,40 +76,21 @@ header {
 
 @media (max-width: 1600px) {
   header {
-    padding: 0 0 20px;
+    padding: 0;
     background-size: cover;
 
     .h__content {
+
       &_space {
-        width: 8%;
+        width: 8vw;
       }
 
       &_text {
-        width: 55%;
-        padding-top: 50px;
-
-        .title-1 {
-          font-size: 24px;
-
-        }
-
-        .title-2 {
-          font-size: 60px;
-        }
-
-        .under-title {
-          width: 350px;
-
-          .buttons {
-            flex-direction: column;
-            align-items: flex-end;
-          }
-        }
+        width: 48%;
       }
 
       &_img {
-        width: 37%;
-        margin-top: 20px;
+        width: 43%;
       }
     }
   }

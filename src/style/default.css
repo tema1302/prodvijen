@@ -14,7 +14,7 @@ html {
 body {
   font-size: 16px;
   color: #141414;
-  font-family: "Gilroy", serif;
+  font-family: "Gilroy", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -36,12 +36,12 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 18px 25px;
+  padding: 18px 25px 18px 22px;
 }
 
 .btn-default span {
   text-transform: uppercase;
-  font-family: "Proxima Nova Rg", serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 20px;
@@ -73,16 +73,18 @@ a:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
   margin-top: 25px;
-}
-
-.btn-default + .text + .text {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  max-height: 0;
 }
 
 .btn-default:hover .btn-pro {
   width: 100%;
+}
+
+.btn-default:hover + .text {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  max-height: 120px;
 }
 
 @media (max-width: 768px) {
@@ -91,9 +93,7 @@ a:hover {
   }
   .btn-default + .text {
     margin-top: 20px;
-  }
-  .btn-default:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -110,9 +110,7 @@ a:hover {
   }
   .btn-default + .text {
     margin-top: 15px;
-  }
-  .btn-default:first-child {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=default.css.map */
