@@ -6,11 +6,12 @@
   color: $maincolor1;
   padding: 100px 0;
 
-&__logo {
-  top: -150px;
-  right: 0;
-  width: 560px;
-}
+  &__logo {
+    top: -150px;
+    right: 0;
+    width: 560px;
+  }
+
   h2 {
     font-size: 50px;
     margin-bottom: 60px;
@@ -56,7 +57,7 @@
       top: -80px;
       right: 0;
     }
-    
+
     h2 {
       font-size: 45px;
       margin-bottom: 40px;
@@ -85,9 +86,15 @@
   .s-4 {
     padding: 60px 5%;
 
+    .s-4__logo {
+      width: 380px;
+      top: -124px;
+      right: -50px;
+    }
+
     h2 {
       font-size: 38px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
 
     h3 {
@@ -100,6 +107,7 @@
     }
 
     &__white-block {
+      padding: 20px 14px;
       .desc {
         font-size: 14px;
       }

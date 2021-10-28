@@ -155,8 +155,9 @@
     }
 
     &__white-block {
-      min-height: 160px;
-      padding: 20px 50px 10px 10px;
+      max-width: none;
+      min-height: 180px;
+      padding: 47px 50px 10px 10px;
 
       &_img {
         img {
@@ -167,19 +168,19 @@
       }
 
       &_info {
-        padding-left: 40px;
+        padding-left: 57px;
 
         .title {
-          font-size: 22px;
+          font-size: 25px;
           margin-bottom: 25px;
 
           &::after {
-            width: 65px;
+            width: 123px;
           }
         }
 
         .desc {
-          font-size: 24px;
+          font-size: 30px;
         }
       }
     }

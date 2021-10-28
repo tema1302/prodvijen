@@ -200,13 +200,26 @@
     padding: 60px 0 20px;
   }
   .s-1 h2 {
-    font-size: 40px;
+    font-size: 35px;
+  }
+  .s-1 h2 br {
+    display: none;
   }
   .s-1__px-custom {
-    padding: 100px 8% 50px;
+    padding: 100px 8% 0;
   }
   .s-1 .mb-80 {
     margin-bottom: 70px;
+  }
+  .s-1__white-block {
+    padding: 16px 18px;
+    min-height: 215px;
+  }
+  .s-1__white-block img.img-fluid {
+    width: 106px;
+  }
+  .s-1__white-block .desc {
+    font-size: 14px;
   }
 }
 

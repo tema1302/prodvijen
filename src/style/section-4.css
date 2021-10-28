@@ -87,9 +87,14 @@
   .s-4 {
     padding: 60px 5%;
   }
+  .s-4 .s-4__logo {
+    width: 380px;
+    top: -124px;
+    right: -50px;
+  }
   .s-4 h2 {
     font-size: 38px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   .s-4 h3 {
     font-size: 24px;
@@ -97,6 +102,9 @@
   }
   .s-4__px-custom {
     margin-bottom: 20px;
+  }
+  .s-4__white-block {
+    padding: 20px 14px;
   }
   .s-4__white-block .desc {
     font-size: 14px;
