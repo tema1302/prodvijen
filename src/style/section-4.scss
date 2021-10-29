@@ -39,10 +39,18 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   .s-4 {
     &__px-custom {
       padding: 0 8%;
+    }
+
+    &__white-block {
+      .desc {
+        br {
+          display: none;
+        }
+      }
     }
   }
 }

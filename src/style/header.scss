@@ -21,9 +21,33 @@ header {
     }
 
     &_text {
-      padding-top: 15.7vh;
+      padding-top: 8vh;
       flex: 0 0 auto;
       width: 44%;
+
+      .marathon-info {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 6vh;
+
+        &-content {
+          display: flex;
+          flex-direction: column;
+          font-size: 18px;
+          line-height: 1.2;
+          margin-right: 5.3vw;
+
+          .t-1 {
+            color: $maincolor1;
+            margin-bottom: 5px;
+          }
+
+          .t-2 {
+            font-weight: bold;
+            color: $basecolor;
+          }
+        }
+      }
 
       .title-1 {
         font-size: 1.56vw;
@@ -48,14 +72,16 @@ header {
           flex-wrap: wrap;
           align-items: flex-start;
           justify-content: flex-start;
+
           .b-1 {
             margin-right: 21px;
+            margin-left: -22px;
           }
         }
 
         .text {
           font-size: 14px;
-          padding-left: 25px;
+          // padding-left: 25px;
 
           .lighten {
             font-weight: normal;
@@ -68,7 +94,7 @@ header {
     &_img {
       flex: 0 0 auto;
       width: 45%;
-      transform: translateY(-4vh);      
+      transform: translateY(-4vh);
     }
   }
 }
@@ -130,6 +156,11 @@ header {
         .under-title {
           .buttons {
             margin-bottom: 20px;
+
+            .b-1 {
+              margin-right: 15px;
+              margin-left: -22px;
+            }
           }
         }
       }
@@ -145,6 +176,18 @@ header {
 @media (max-width: 991px) {
   header {
     .h__content {
+
+      &_text {
+        .marathon-info {
+          margin-bottom: 6vh;
+
+          &-content {
+            font-size: 16px;
+            margin-right: 3vw;
+          }
+        }
+      }
+
       &_img {
         width: 50%;
         margin-top: 120px;
@@ -232,6 +275,7 @@ header {
 @media (max-width: 476px) {
   header {
     background-position: 56% 100%;
+
     .h__content {
       padding: 40px 20px 80px;
 

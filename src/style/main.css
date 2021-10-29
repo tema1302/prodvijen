@@ -87,14 +87,54 @@ a:hover {
   max-height: 120px;
 }
 
+@media (max-width: 1600px) {
+  .btn-default {
+    padding: 18px 25px 18px 22px;
+  }
+  .btn-default span {
+    font-size: 1.3vw;
+  }
+  .btn-default + .text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn-default {
+    padding: 18px 16px 18px 22px;
+  }
+  .btn-default span {
+    font-size: 1.4vw;
+  }
+  .btn-default img {
+    margin-left: 25px;
+  }
+  .btn-default .btn-pro {
+    width: 58px;
+    height: 42px;
+  }
+  .btn-default + .text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
   .btn-default span {
     font-size: 18px;
+  }
+  .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
   }
   .btn-default + .text {
     opacity: 1;
     min-height: auto;
-    margin-top: 40px;
+    margin-top: 18px;
     margin-bottom: 20px;
   }
 }
@@ -174,11 +214,44 @@ header .h__content_space {
 }
 
 header .h__content_text {
-  padding-top: 15.7vh;
+  padding-top: 8vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 44%;
+}
+
+header .h__content_text .marathon-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 6vh;
+}
+
+header .h__content_text .marathon-info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-right: 5.3vw;
+}
+
+header .h__content_text .marathon-info-content .t-1 {
+  color: #141414;
+  margin-bottom: 5px;
+}
+
+header .h__content_text .marathon-info-content .t-2 {
+  font-weight: bold;
+  color: #E4326C;
 }
 
 header .h__content_text .title-1 {
@@ -214,11 +287,11 @@ header .h__content_text .under-title .buttons {
 
 header .h__content_text .under-title .buttons .b-1 {
   margin-right: 21px;
+  margin-left: -22px;
 }
 
 header .h__content_text .under-title .text {
   font-size: 14px;
-  padding-left: 25px;
 }
 
 header .h__content_text .under-title .text .lighten {
@@ -282,6 +355,10 @@ header .h__content_img {
   header .h__content_text .under-title .buttons {
     margin-bottom: 20px;
   }
+  header .h__content_text .under-title .buttons .b-1 {
+    margin-right: 15px;
+    margin-left: -22px;
+  }
   header .h__content_img {
     width: 50%;
     margin-top: 0;
@@ -289,6 +366,13 @@ header .h__content_img {
 }
 
 @media (max-width: 991px) {
+  header .h__content_text .marathon-info {
+    margin-bottom: 6vh;
+  }
+  header .h__content_text .marathon-info-content {
+    font-size: 16px;
+    margin-right: 3vw;
+  }
   header .h__content_img {
     width: 50%;
     margin-top: 120px;
@@ -1222,9 +1306,12 @@ header .h__content_img {
   line-height: 1.3;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   .s-4__px-custom {
     padding: 0 8%;
+  }
+  .s-4__white-block .desc br {
+    display: none;
   }
 }
 
@@ -1441,14 +1528,54 @@ header .h__content_img {
   max-height: 120px;
 }
 
+@media (max-width: 1600px) {
+  .s-5__buttons .btn-default {
+    padding: 18px 25px 18px 22px;
+  }
+  .s-5__buttons .btn-default span {
+    font-size: 1.3vw;
+  }
+  .s-5__buttons .btn-default + .text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .s-5__buttons .btn-default {
+    padding: 18px 16px 18px 22px;
+  }
+  .s-5__buttons .btn-default span {
+    font-size: 1.4vw;
+  }
+  .s-5__buttons .btn-default img {
+    margin-left: 25px;
+  }
+  .s-5__buttons .btn-default .btn-pro {
+    width: 58px;
+    height: 42px;
+  }
+  .s-5__buttons .btn-default + .text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .s-5__buttons .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
   .s-5__buttons .btn-default span {
     font-size: 18px;
+  }
+  .s-5__buttons .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
   }
   .s-5__buttons .btn-default + .text {
     opacity: 1;
     min-height: auto;
-    margin-top: 40px;
+    margin-top: 18px;
     margin-bottom: 20px;
   }
 }
@@ -1468,6 +1595,10 @@ header .h__content_img {
     margin-top: 15px;
     margin-bottom: 20px;
   }
+}
+
+.s-5__buttons .b-1 {
+  margin-right: 20px;
 }
 
 .s-5__buttons .text {
