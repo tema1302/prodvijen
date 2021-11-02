@@ -9,7 +9,7 @@
 }
 
 .s-1__px-custom {
-  padding: 17vh 19.5vw 9vh;
+  padding: 11vh 19.5vw 9vh;
 }
 
 .s-1 .mb-80 {
@@ -37,6 +37,8 @@
 
 .s-1__substrate .img-hover.h-1 {
   z-index: -1;
+  -webkit-transform: translate(-50%, -50%) scale(0.7, 0.7);
+          transform: translate(-50%, -50%) scale(0.7, 0.7);
 }
 
 .s-1__substrate .img-hover.h-2 {
@@ -77,8 +79,8 @@
 }
 
 .s-1__substrate:hover .img-hover.h-1 {
-  top: 14%;
-  left: -2%;
+  top: 10%;
+  left: 0;
 }
 
 .s-1__substrate:hover .img-hover.h-2 {

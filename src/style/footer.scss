@@ -2,20 +2,25 @@
 
 footer {
   background-color: $bgcolor1;
-  padding: 60px 160px 30px;
+  padding: 88px 6vw 111px;
 
   .f__cba {
-    margin-bottom: 40px;
+    font-size: 1.3vw;
+
+
+    .f__links {
+      flex: 0 0 auto;
+      width: 26.4%;
+
+      a {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
 
     &_info {
-      font-size: 26px;
-    }
-  }
-
-  .f__links {
-    a {
-      display: block;
-      margin-bottom: 10px;
+      flex: 0 0 auto;
+      width: 47.2%;
     }
   }
 }
@@ -25,14 +30,24 @@ footer {
     padding: 50px 8%;
 
     .f__cba {
-      margin-bottom: 40px;
+      font-size: 2.3vw;
 
-      br {
-        display: none;
+      .f__links {
+        width: 50%;
+        margin-bottom: 40px;
+
+        a {
+          display: block;
+          margin-bottom: 20px;
+        }
       }
 
       &_info {
-        font-size: 26px;
+        width: 100%;
+
+        br {
+          display: none;
+        }
       }
     }
   }
@@ -43,11 +58,16 @@ footer {
     padding: 40px 20px;
 
     .f__cba {
+      font-size: 2.8vw;
       margin-bottom: 0;
 
+      .f__links {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
       &_info {
-        font-size: 18px;
-        margin-bottom: 20px;
+        // font-size: 18px;
       }
     }
   }
@@ -57,16 +77,17 @@ footer {
   footer {
     .f__cba {
       margin-bottom: 0;
+      font-size: 4.5vw;
 
-      &_info {
-        font-size: 20px;
+      .f__links {
+        width: 100%;
+        margin-bottom: 0;
         text-align: center;
       }
 
-      &_logo {
-        img {
-          width: 270px;
-        }
+      &_info {
+        text-align: center;
+        margin-top: 20px;
       }
     }
   }

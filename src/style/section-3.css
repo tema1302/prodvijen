@@ -194,7 +194,6 @@
     padding: 73px 23px 60px;
   }
   .s-3__slider_item.slick-current {
-    width: 200px;
     -webkit-transform: scale(1.35);
             transform: scale(1.35);
   }
@@ -234,10 +233,10 @@
     margin-bottom: 20px;
   }
   .s-3__slider .slick-track {
-    margin-left: 3%;
+    margin-left: 16%;
   }
   .s-3__slider_item {
-    padding: 45px 15px 35px;
+    padding: 65px 15px 35px;
   }
   .s-3__slider_item_img {
     width: 190px;
@@ -245,10 +244,16 @@
   }
   .s-3__slider_item_info {
     width: 220px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .s-3__slider_item_info .desc {
-    font-size: 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .s-3__slider .slick-track {
+    margin-left: 16%;
   }
 }
 /*# sourceMappingURL=section-3.css.map */

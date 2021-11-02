@@ -1,19 +1,29 @@
 footer {
   background-color: #f2cb05;
-  padding: 60px 160px 30px;
+  padding: 88px 6vw 111px;
 }
 
 footer .f__cba {
-  margin-bottom: 40px;
+  font-size: 1.3vw;
+}
+
+footer .f__cba .f__links {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 26.4%;
+}
+
+footer .f__cba .f__links a {
+  display: block;
+  margin-bottom: 20px;
 }
 
 footer .f__cba_info {
-  font-size: 26px;
-}
-
-footer .f__links a {
-  display: block;
-  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 47.2%;
 }
 
 @media (max-width: 1400px) {
@@ -21,13 +31,21 @@ footer .f__links a {
     padding: 50px 8%;
   }
   footer .f__cba {
+    font-size: 2.3vw;
+  }
+  footer .f__cba .f__links {
+    width: 50%;
     margin-bottom: 40px;
   }
-  footer .f__cba br {
-    display: none;
+  footer .f__cba .f__links a {
+    display: block;
+    margin-bottom: 20px;
   }
   footer .f__cba_info {
-    font-size: 26px;
+    width: 100%;
+  }
+  footer .f__cba_info br {
+    display: none;
   }
 }
 
@@ -36,24 +54,28 @@ footer .f__links a {
     padding: 40px 20px;
   }
   footer .f__cba {
+    font-size: 2.8vw;
     margin-bottom: 0;
   }
-  footer .f__cba_info {
-    font-size: 18px;
-    margin-bottom: 20px;
+  footer .f__cba .f__links {
+    width: 50%;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 476px) {
   footer .f__cba {
     margin-bottom: 0;
+    font-size: 4.5vw;
   }
-  footer .f__cba_info {
-    font-size: 20px;
+  footer .f__cba .f__links {
+    width: 100%;
+    margin-bottom: 0;
     text-align: center;
   }
-  footer .f__cba_logo img {
-    width: 270px;
+  footer .f__cba_info {
+    text-align: center;
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

@@ -10,6 +10,8 @@ header {
 
 header .h__top {
   font-size: 13px;
+  position: relative;
+  z-index: 1;
 }
 
 header .h__content {
@@ -21,7 +23,7 @@ header .h__content_space {
 }
 
 header .h__content_text {
-  padding-top: 15.7vh;
+  padding-top: 8vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -35,6 +37,7 @@ header .h__content_text .marathon-info {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 6vh;
 }
 
 header .h__content_text .marathon-info-content {
@@ -47,12 +50,13 @@ header .h__content_text .marathon-info-content {
           flex-direction: column;
   font-size: 18px;
   line-height: 1.2;
-  margin-right: 85px;
+  margin-right: 5.3vw;
 }
 
 header .h__content_text .marathon-info-content .t-1 {
   color: #141414;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 header .h__content_text .marathon-info-content .t-2 {
@@ -63,6 +67,7 @@ header .h__content_text .marathon-info-content .t-2 {
 header .h__content_text .title-1 {
   font-size: 1.56vw;
   margin-bottom: 6.2vh;
+  font-weight: 500;
 }
 
 header .h__content_text .title-2 {
@@ -78,6 +83,7 @@ header .h__content_text .title-3 {
 
 header .h__content_text .under-title .buttons {
   margin-bottom: 25px;
+  margin-left: -22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +99,6 @@ header .h__content_text .under-title .buttons {
 
 header .h__content_text .under-title .buttons .b-1 {
   margin-right: 21px;
-  margin-left: -22px;
 }
 
 header .h__content_text .under-title .text {
@@ -109,7 +114,7 @@ header .h__content_img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 45%;
+  width: 43%;
   -webkit-transform: translateY(-4vh);
           transform: translateY(-4vh);
 }
@@ -156,14 +161,13 @@ header .h__content_img {
     margin-bottom: 40px;
   }
   header .h__content_text .title-2 {
-    font-size: 55px;
+    font-size: 4.8vw;
   }
   header .h__content_text .under-title .buttons {
     margin-bottom: 20px;
   }
   header .h__content_text .under-title .buttons .b-1 {
     margin-right: 15px;
-    margin-left: -22px;
   }
   header .h__content_img {
     width: 50%;
@@ -172,36 +176,70 @@ header .h__content_img {
 }
 
 @media (max-width: 991px) {
+  header .h__top {
+    padding: 20px !important;
+  }
+  header .h__content_text {
+    width: 60%;
+  }
+  header .h__content_text .marathon-info {
+    margin-bottom: 6vh;
+  }
+  header .h__content_text .marathon-info-content {
+    font-size: 16px;
+    margin-right: 3vw;
+  }
+  header .h__content_text .under-title .buttons {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   header .h__content_img {
-    width: 50%;
+    width: 30%;
     margin-top: 120px;
   }
 }
 
 @media (max-width: 768px) {
   header {
+    padding: 20px;
     background-position: 50% 100%;
   }
+  header .h__top {
+    margin-bottom: 7.1vh;
+    font-size: 12px;
+    padding: 0 !important;
+  }
   header .h__content {
-    padding: 22px 0 32px 41px;
+    padding: 0;
   }
   header .h__content_text {
-    padding-top: 35px;
     width: 100%;
   }
+  header .h__content_text .marathon-info {
+    margin-bottom: 8.8vh;
+  }
+  header .h__content_text .marathon-info-content {
+    font-size: 14px;
+    margin-right: 4.6vw;
+  }
+  header .h__content_text .marathon-info-content .t-1 {
+    margin-bottom: 10px;
+  }
   header .h__content_text .title-1 {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
+    font-size: 2.5vw;
   }
   header .h__content_text .title-2 {
-    font-size: 65px;
+    font-size: 7.2vw;
     letter-spacing: 3px;
+    margin-bottom: 20px;
   }
   header .h__content_text .title-3 {
-    font-size: 22px;
-    margin-bottom: 90px;
+    font-size: 2.5vw;
+    margin-bottom: 13vh;
   }
-  header .h__content_text .under-title {
-    width: 313px;
+  header .h__content_text .under-title .buttons {
+    margin-left: -20px;
   }
   header .h__content_img {
     width: 0;
@@ -210,22 +248,59 @@ header .h__content_img {
   }
   header .h__content_img img {
     position: absolute;
-    width: 320px;
-    top: 200px;
-    left: -320px;
+    width: 40vw;
+    top: -2vh;
+    left: -268px;
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
 }
 
+@media (max-width: 760px) {
+  header {
+    padding-bottom: 50px;
+    background-position: 50% 100%;
+  }
+  header .h__content {
+    padding: 0;
+  }
+  header .h__content_text .title-2 {
+    font-size: 6vw;
+    letter-spacing: 2px;
+  }
+  header .h__content_text .title-3 {
+    font-size: 2vw;
+    margin-bottom: 10vh;
+  }
+  header .h__content_img img {
+    width: 33vw;
+    top: 6vh;
+  }
+}
+
 @media (max-width: 576px) {
   header {
-    background-image: url(../images/h__ellipse_mob1.png);
-    background-position: 65% 100%;
+    background-image: none;
+    position: relative;
+  }
+  header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 1085px;
+    width: 1085px;
+    background: #ffffff;
+    border-radius: 50%;
   }
   header .h__content {
     padding: 20px 0 60px 20px;
+    position: relative;
+    z-index: 1;
   }
   header .h__content_text {
     padding-top: 30px;
@@ -235,7 +310,23 @@ header .h__content_img {
   }
   header .h__content_text .title-3 {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  }
+  header .h__content_text .img-mob {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  header .h__content_text .under-title .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header .h__content_text .under-title .buttons .b-1 {
+    margin-right: 0;
   }
   header .h__content_img {
     display: none;
@@ -247,13 +338,16 @@ header .h__content_img {
     background-position: 56% 100%;
   }
   header .h__content {
-    padding: 40px 20px 80px;
+    padding: 0;
   }
   header .h__content_text {
     padding-top: 0;
   }
+  header .h__content_text .marathon-info-content {
+    font-size: 12px;
+  }
   header .h__content_text .title-1 {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 25px;
   }
   header .h__content_text .title-2 {
@@ -262,13 +356,9 @@ header .h__content_img {
   }
   header .h__content_text .title-3 {
     font-size: 16px;
-    margin-bottom: 30px;
   }
-  header .h__content_text .under-title {
-    width: 100%;
-  }
-  header .h__content_text .under-title .text {
-    padding-left: 15px;
+  header .h__content_text .under-title .buttons .b-1 {
+    text-align: end;
   }
 }
 /*# sourceMappingURL=header.css.map */

@@ -123,7 +123,7 @@
   opacity: 0;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-  margin-top: 25px;
+  margin: 25px 0 20px 22px;
   max-height: 0;
 }
 
@@ -138,14 +138,51 @@
   max-height: 120px;
 }
 
+@media (max-width: 1600px) {
+  .s-5__buttons .btn-default {
+    padding: 18px 25px 18px 22px;
+  }
+  .s-5__buttons .btn-default span {
+    font-size: 1.3vw;
+  }
+  .s-5__buttons .btn-default + .text {
+    margin: 20px 0 20px 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .s-5__buttons .btn-default {
+    padding: 18px 16px 18px 22px;
+  }
+  .s-5__buttons .btn-default span {
+    font-size: 1.4vw;
+  }
+  .s-5__buttons .btn-default img {
+    margin-left: 25px;
+  }
+  .s-5__buttons .btn-default .btn-pro {
+    width: 58px;
+    height: 42px;
+  }
+  .s-5__buttons .btn-default + .text {
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .s-5__buttons .btn-default span {
     font-size: 18px;
   }
+  .s-5__buttons .btn-default img {
+    margin-left: 35px;
+  }
+  .s-5__buttons .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
+  }
   .s-5__buttons .btn-default + .text {
-    opacity: 1;
-    min-height: auto;
-    margin-top: 40px;
+    display: none;
+    margin-top: 25px;
     margin-bottom: 20px;
   }
 }
@@ -162,9 +199,13 @@
     height: 52px;
   }
   .s-5__buttons .btn-default + .text {
-    margin-top: 15px;
     margin-bottom: 20px;
+    margin-left: 30px;
   }
+}
+
+.s-5__buttons .b-1 {
+  margin-right: 20px;
 }
 
 .s-5__buttons .text {
@@ -195,9 +236,6 @@
   }
   .s-5__white-block_info .desc {
     font-size: 16px;
-  }
-  .s-5__white-block_info .desc br {
-    display: none;
   }
 }
 
@@ -278,6 +316,9 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .s-5__buttons .b-1 {
+    margin-right: 0;
   }
 }
 

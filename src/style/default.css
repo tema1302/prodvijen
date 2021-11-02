@@ -87,12 +87,54 @@ a:hover {
   max-height: 120px;
 }
 
+@media (max-width: 1600px) {
+  .btn-default {
+    padding: 18px 25px 18px 22px;
+  }
+  .btn-default span {
+    font-size: 1.3vw;
+  }
+  .btn-default + .text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn-default {
+    padding: 18px 16px 18px 22px;
+  }
+  .btn-default span {
+    font-size: 1.4vw;
+  }
+  .btn-default img {
+    margin-left: 25px;
+  }
+  .btn-default .btn-pro {
+    width: 58px;
+    height: 42px;
+  }
+  .btn-default + .text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .btn-default {
+    padding: 18px 19px 18px 29px;
+  }
   .btn-default span {
     font-size: 18px;
   }
+  .btn-default .btn-pro {
+    width: 68px;
+    height: 52px;
+  }
   .btn-default + .text {
-    margin-top: 20px;
+    opacity: 1;
+    min-height: auto;
+    margin-top: 18px;
     margin-bottom: 20px;
   }
 }

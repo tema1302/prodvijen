@@ -260,11 +260,11 @@
 
     &__slider {
       .slick-track {
-        margin-left: 3%;
+        margin-left: 16%;
       }
 
       &_item {
-        padding: 45px 15px 35px;
+        padding: 65px 15px 35px;
 
         &_img {
           width: 190px;
@@ -273,12 +273,21 @@
 
         &_info {
           width: 220px;
-          font-size: 16px;
+          font-size: 14px;
 
           .desc {
-            font-size: 14px;
+            font-size: 12px;
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 370px) {
+  .s-3 {
+    &__slider {
+      .slick-track {
+        margin-left: 9%;
       }
     }
   }
