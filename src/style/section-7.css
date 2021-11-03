@@ -3,77 +3,62 @@
   color: #141414;
   padding: 100px 310px;
 }
-
 .s-7 h2 {
   font-size: 50px;
   margin-bottom: 60px;
 }
-
 .s-7__accordion_item {
   margin-bottom: 70px;
 }
-
 .s-7__accordion_item_content {
   padding-bottom: 40px;
   padding-right: 70px;
   font-size: 20px;
   line-height: 1.6;
 }
-
 .s-7__dropdown {
   padding: 50px 70px 50px 0;
   cursor: pointer;
 }
-
 .s-7__dropdown_text {
   font-size: 38px;
 }
-
 .s-7__dropdown .relative-wrapper {
   position: relative;
   bottom: 117px;
 }
-
 .s-7__dropdown_number {
   position: absolute;
   left: -10px;
   font-size: 130px;
   color: rgba(20, 20, 20, 0.1);
 }
-
 .s-7__dropdown_shevron {
   position: absolute;
   padding: 20px;
   bottom: 30px;
   right: 10px;
   cursor: pointer;
-  -webkit-transform-origin: 57% 50%;
-          transform-origin: 57% 50%;
-  -webkit-transition: all 0.5s ease;
+  transform-origin: 57% 50%;
   transition: all 0.5s ease;
 }
-
 .s-7__dropdown_shevron:after {
-  content: '';
+  content: "";
   position: absolute;
   right: 14px;
   width: 15px;
   height: 3px;
   background-color: #141414;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 .s-7__dropdown_shevron:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 3px;
   background-color: #141414;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-
 .s-7__dropdown_line {
   position: absolute;
   width: 100%;
@@ -82,18 +67,14 @@
   left: 0;
   background-color: #141414;
 }
-
 .s-7__dropdown:not(.collapsed) .s-7__dropdown_shevron {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
-
 .s-7__questions {
   font-size: 35px;
   padding-top: 50px;
   margin-bottom: 50px;
 }
-
 .s-7 .btn-default {
   margin: 0 auto;
 }
@@ -103,7 +84,6 @@
     padding: 80px 8%;
   }
 }
-
 @media (max-width: 768px) {
   .s-7 {
     padding: 60px 8%;
@@ -153,7 +133,6 @@
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 476px) {
   .s-7 {
     padding: 40px 20px;
@@ -202,5 +181,4 @@
     padding-top: 50px;
     margin-bottom: 30px;
   }
-}
-/*# sourceMappingURL=section-7.css.map */
+}/*# sourceMappingURL=section-7.css.map */

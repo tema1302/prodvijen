@@ -7,116 +7,79 @@ header {
   padding: 0;
   color: #141414;
 }
-
 header .h__top {
   font-size: 1vw;
   position: relative;
   z-index: 1;
 }
-
 header .h__content {
   font-weight: bold;
 }
-
 header .h__content_space {
   width: 10.2vw;
 }
-
 header .h__content_text {
   padding-top: 8vh;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 44%;
 }
-
 header .h__content_text .marathon-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   margin-bottom: 6vh;
 }
-
 header .h__content_text .marathon-info-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-size: 1.2vw;
   line-height: 1.2;
   margin-right: 5.3vw;
 }
-
 header .h__content_text .marathon-info-content .t-1 {
   color: #141414;
   margin-bottom: 5px;
   font-weight: 500;
 }
-
 header .h__content_text .marathon-info-content .t-2 {
   font-weight: bold;
   color: #E4326C;
 }
-
 header .h__content_text .title-1 {
   font-size: 1.56vw;
   margin-bottom: 6.2vh;
   font-weight: 500;
 }
-
 header .h__content_text .title-2 {
   font-size: 5.1vw;
   color: #E4326C;
   margin-bottom: 15px;
 }
-
 header .h__content_text .title-3 {
   font-size: 1.66vw;
   margin-bottom: 10.6vh;
 }
-
 header .h__content_text .under-title .buttons {
   margin-bottom: 25px;
   margin-left: -22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-
 header .h__content_text .under-title .buttons .b-1 {
   margin-right: 21px;
 }
-
 header .h__content_text .under-title .text {
   font-size: 14px;
 }
-
 header .h__content_text .under-title .text .lighten {
   font-weight: normal;
   margin-top: 10px;
 }
-
 header .h__content_img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 43%;
-  -webkit-transform: translateY(-4vh);
-          transform: translateY(-4vh);
+  transform: translateY(-4vh);
 }
 
 @media (max-width: 1600px) {
@@ -134,13 +97,17 @@ header .h__content_img {
     width: 43%;
   }
 }
-
 @media (max-width: 1400px) {
   header {
     background-position: 50% 80%;
   }
+  header .h__top {
+    font-size: 18px;
+  }
+  header .h__content .marathon-info-content {
+    font-size: 18px;
+  }
 }
-
 @media (max-width: 1200px) {
   header {
     background-position: 50% 100%;
@@ -174,7 +141,6 @@ header .h__content_img {
     margin-top: 0;
   }
 }
-
 @media (max-width: 991px) {
   header .h__top {
     padding: 20px !important;
@@ -190,15 +156,13 @@ header .h__content_img {
     margin-right: 3vw;
   }
   header .h__content_text .under-title .buttons {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   header .h__content_img {
     width: 30%;
     margin-top: 120px;
   }
 }
-
 @media (max-width: 768px) {
   header {
     padding: 20px;
@@ -256,7 +220,6 @@ header .h__content_img {
     max-width: max-content;
   }
 }
-
 @media (max-width: 760px) {
   header {
     padding-bottom: 50px;
@@ -278,7 +241,6 @@ header .h__content_img {
     top: 6vh;
   }
 }
-
 @media (max-width: 576px) {
   header {
     background-image: none;
@@ -286,13 +248,12 @@ header .h__content_img {
     padding-bottom: 20px;
   }
   header::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     height: 1085px;
     width: 1085px;
     background: #ffffff;
@@ -318,17 +279,11 @@ header .h__content_img {
     margin-bottom: 0;
   }
   header .h__content_text .img-mob {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    transform: scale(1.15);
   }
   header .h__content_text .under-title .buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
   header .h__content_text .under-title .buttons .b-1 {
     margin-right: 0;
@@ -338,7 +293,6 @@ header .h__content_img {
     display: none;
   }
 }
-
 @media (max-width: 476px) {
   header .h__content {
     padding: 0;
@@ -367,5 +321,4 @@ header .h__content_img {
   header .h__content_text .under-title .buttons .b-1 {
     text-align: end;
   }
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

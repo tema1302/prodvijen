@@ -1,5 +1,5 @@
 @import "varibles.scss";
-@import "font-family.css";
+@import "font-family.scss";
 @import "mixins.scss";
 
 * {
@@ -31,6 +31,10 @@ a {
     &:hover {
         color: $maincolor1;
     }
+}
+
+.f-links {
+    background-color: #F2EFEA;
 }
 
 @include btn-default($bgcolor1);

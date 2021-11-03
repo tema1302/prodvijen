@@ -2,27 +2,19 @@ footer {
   background-color: #f2cb05;
   padding: 88px 6vw 111px;
 }
-
 footer .f__cba {
   font-size: 1.3vw;
 }
-
 footer .f__cba .f__links {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 26.4%;
 }
-
 footer .f__cba .f__links a {
   display: block;
   margin-bottom: 20px;
 }
-
 footer .f__cba_info {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 47.2%;
 }
 
@@ -48,7 +40,6 @@ footer .f__cba_info {
     display: none;
   }
 }
-
 @media (max-width: 768px) {
   footer {
     padding: 40px 20px;
@@ -62,7 +53,6 @@ footer .f__cba_info {
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 476px) {
   footer .f__cba {
     margin-bottom: 0;
@@ -77,5 +67,4 @@ footer .f__cba_info {
     text-align: center;
     margin-top: 20px;
   }
-}
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

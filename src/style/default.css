@@ -1,12 +1,39 @@
-@import url(d:\Frontend\CoralClub\CBA\prodvijen\src\style\font-family.css);
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   line-height: 1.2;
 }
-
 *:focus-visible {
   outline: none;
 }
@@ -27,22 +54,20 @@ a {
   text-decoration: none;
   color: #141414;
 }
-
 a:hover {
   color: #141414;
 }
 
+.f-links {
+  background-color: #F2EFEA;
+}
+
 .btn-default {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   padding: 18px 25px 18px 22px;
 }
-
 .btn-default span {
   text-transform: uppercase;
   font-family: "Proxima Nova Rg", sans-serif;
@@ -51,12 +76,10 @@ a:hover {
   font-size: 20px;
   z-index: 2;
 }
-
 .btn-default img {
   margin-left: 35px;
   z-index: 2;
 }
-
 .btn-default .btn-pro {
   position: absolute;
   background: #f2cb05;
@@ -66,28 +89,21 @@ a:hover {
   height: 60px;
   right: 0;
   z-index: 1;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 .btn-default + .text {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   opacity: 0;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  transform: translateY(-20px);
   margin: 25px 0 20px 22px;
   max-height: 0;
 }
-
 .btn-default:hover .btn-pro {
   width: 100%;
 }
-
 .btn-default:hover + .text {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   max-height: 120px;
 }
 
@@ -102,7 +118,6 @@ a:hover {
     margin: 20px 0 20px 22px;
   }
 }
-
 @media (max-width: 1200px) {
   .btn-default {
     padding: 18px 16px 18px 22px;
@@ -121,7 +136,6 @@ a:hover {
     margin-top: 15px;
   }
 }
-
 @media (max-width: 768px) {
   .btn-default span {
     font-size: 18px;
@@ -139,7 +153,6 @@ a:hover {
     margin-bottom: 20px;
   }
 }
-
 @media (max-width: 476px) {
   .btn-default {
     padding: 18px 19px 18px 29px;
@@ -155,5 +168,4 @@ a:hover {
     margin-bottom: 20px;
     margin-left: 30px;
   }
-}
-/*# sourceMappingURL=default.css.map */
+}/*# sourceMappingURL=default.css.map */

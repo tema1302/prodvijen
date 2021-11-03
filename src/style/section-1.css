@@ -2,126 +2,89 @@
   background-color: #f2cb05;
   margin-top: -5px;
 }
-
 .s-1 h2 {
   font-size: 2.4vw;
   line-height: 1.5;
   padding: 0 10px;
 }
-
 .s-1__px-custom {
   padding: 11vh 19.5vw 9vh;
 }
-
 .s-1 .mb-80 {
   margin-bottom: 80px;
 }
-
 .s-1__substrate {
   z-index: 5;
   height: 100%;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 .s-1__substrate .img-hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: all 0.5s ease;
+  transform: translate(-50%, -50%);
   transition: all 0.5s ease;
   opacity: 0;
   pointer-events: none;
 }
-
 .s-1__substrate .img-hover.h-1 {
   z-index: -1;
-  -webkit-transform: translate(-50%, -50%) scale(0.7, 0.7);
-          transform: translate(-50%, -50%) scale(0.7, 0.7);
+  transform: translate(-50%, -50%) scale(0.7, 0.7);
 }
-
 .s-1__substrate .img-hover.h-2 {
   z-index: -1;
 }
-
 .s-1__substrate .img-hover.h-3 {
   z-index: -1;
 }
-
 .s-1__substrate .img-hover.h-4 {
   z-index: -1;
 }
-
 .s-1__substrate .desc {
   font-size: 18px;
   line-height: 1.3;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   will-change: transform;
 }
-
 .s-1__substrate:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .s-1__substrate:hover .desc {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .s-1__substrate:hover .img-hover {
   opacity: 1;
 }
-
 .s-1__substrate:hover .img-hover.h-1 {
   top: 10%;
   left: 0;
 }
-
 .s-1__substrate:hover .img-hover.h-2 {
   top: 87%;
   left: 107%;
 }
-
 .s-1__substrate:hover .img-hover.h-3 {
   top: 9%;
   left: 92%;
   z-index: 0;
 }
-
 .s-1__substrate:hover .img-hover.h-4 {
   top: 97%;
   left: 6%;
   z-index: 0;
 }
-
 .s-1__white-block {
   background: #fefefe;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 20px 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   margin-bottom: 0px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -137,14 +100,12 @@
     margin-bottom: 65px;
   }
   .s-1__substrate .img-hover {
-    -webkit-transform: translate(-50%, -50%) scale(0.75, 0.75);
-            transform: translate(-50%, -50%) scale(0.75, 0.75);
+    transform: translate(-50%, -50%) scale(0.75, 0.75);
   }
   .s-1__substrate .desc br {
     display: none;
   }
 }
-
 @media (max-width: 1200px) {
   .s-1 {
     padding: 60px 0;
@@ -168,12 +129,10 @@
     width: 57px;
   }
   .s-1__substrate:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   .s-1__substrate:hover .desc {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   .s-1__substrate:hover .img-hover {
     opacity: 1;
@@ -197,7 +156,6 @@
     z-index: 0;
   }
 }
-
 @media (max-width: 768px) {
   .s-1 {
     padding: 60px 0 20px;
@@ -225,7 +183,6 @@
     font-size: 14px;
   }
 }
-
 @media (max-width: 576px) {
   .s-1__slider {
     overflow-x: auto;
@@ -239,24 +196,16 @@
     scroll-snap-align: start;
   }
   .s-1__slider_row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 90%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     padding: 0 10px;
   }
   .s-1__slider_row .s-1__white-block {
     min-height: 225px;
   }
 }
-
 @media (max-width: 476px) {
   .s-1 {
     padding: 30px 0 30px;
@@ -276,5 +225,4 @@
   .s-1__white-block img.img-fluid {
     height: 80px;
   }
-}
-/*# sourceMappingURL=section-1.css.map */
+}/*# sourceMappingURL=section-1.css.map */
