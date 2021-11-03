@@ -499,7 +499,10 @@ header .h__content_img {
     z-index: 1;
   }
   header .h__content_text {
-    padding-top: 30px;
+    padding-top: 0;
+  }
+  header .h__content_text .marathon-info-content {
+    margin-right: 6.5vw;
   }
   header .h__content_text .title-2 {
     font-size: 45px;
@@ -531,14 +534,14 @@ header .h__content_img {
 }
 
 @media (max-width: 476px) {
-  header {
-    background-position: 56% 100%;
-  }
   header .h__content {
     padding: 0;
   }
   header .h__content_text {
     padding-top: 0;
+  }
+  header .h__content_text .marathon-info {
+    margin-bottom: 5.8vh;
   }
   header .h__content_text .marathon-info-content {
     font-size: 12px;
@@ -549,7 +552,8 @@ header .h__content_img {
   }
   header .h__content_text .title-2 {
     font-size: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
   }
   header .h__content_text .title-3 {
     font-size: 14px;
@@ -567,6 +571,7 @@ header .h__content_img {
 .s-1 h2 {
   font-size: 2.4vw;
   line-height: 1.5;
+  padding: 0 10px;
 }
 
 .s-1__px-custom {
@@ -1697,7 +1702,6 @@ header .h__content_img {
 
 .s-5__buttons .text {
   font-size: 14px;
-  padding-left: 25px;
 }
 
 @media (max-width: 1600px) {

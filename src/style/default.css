@@ -7,6 +7,10 @@
   line-height: 1.2;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -72,7 +76,7 @@ a:hover {
   opacity: 0;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-  margin-top: 25px;
+  margin: 25px 0 20px 22px;
   max-height: 0;
 }
 
@@ -95,8 +99,7 @@ a:hover {
     font-size: 1.3vw;
   }
   .btn-default + .text {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 22px;
   }
 }
 
@@ -116,25 +119,23 @@ a:hover {
   }
   .btn-default + .text {
     margin-top: 15px;
-    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .btn-default {
-    padding: 18px 19px 18px 29px;
-  }
   .btn-default span {
     font-size: 18px;
+  }
+  .btn-default img {
+    margin-left: 35px;
   }
   .btn-default .btn-pro {
     width: 68px;
     height: 52px;
   }
   .btn-default + .text {
-    opacity: 1;
-    min-height: auto;
-    margin-top: 18px;
+    display: none;
+    margin-top: 25px;
     margin-bottom: 20px;
   }
 }
@@ -151,8 +152,8 @@ a:hover {
     height: 52px;
   }
   .btn-default + .text {
-    margin-top: 15px;
     margin-bottom: 20px;
+    margin-left: 30px;
   }
 }
 /*# sourceMappingURL=default.css.map */

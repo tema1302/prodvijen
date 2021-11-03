@@ -336,7 +336,11 @@ header {
       z-index: 1;
 
       &_text {
-        padding-top: 30px;
+        padding-top: 0;
+
+        .marathon-info-content {
+          margin-right: 6.5vw;
+        }
 
         .title-2 {
           font-size: 45px;
@@ -374,8 +378,6 @@ header {
 
 @media (max-width: 476px) {
   header {
-    background-position: 56% 100%;
-
     .h__content {
       padding: 0;
 
@@ -383,6 +385,7 @@ header {
         padding-top: 0;
 
         .marathon-info {
+          margin-bottom: 5.8vh;
           &-content {
             font-size: 12px;
           }
@@ -395,7 +398,8 @@ header {
 
         .title-2 {
           font-size: 30px;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
+          letter-spacing: 1px;
         }
 
         .title-3 {
