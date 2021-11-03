@@ -203,7 +203,7 @@ header {
 }
 
 header .h__top {
-  font-size: 13px;
+  font-size: 1vw;
   position: relative;
   z-index: 1;
 }
@@ -242,7 +242,7 @@ header .h__content_text .marathon-info-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 18px;
+  font-size: 1.2vw;
   line-height: 1.2;
   margin-right: 5.3vw;
 }
@@ -332,6 +332,12 @@ header .h__content_img {
 @media (max-width: 1400px) {
   header {
     background-position: 50% 80%;
+  }
+  header .h__top {
+    font-size: 18px;
+  }
+  header .h__content .marathon-info-content {
+    font-size: 18px;
   }
 }
 
@@ -1358,7 +1364,7 @@ header .h__content_img {
 }
 
 .s-4__logo {
-  top: -150px;
+  top: -100px;
   right: 0;
   width: 560px;
 }
@@ -1423,7 +1429,7 @@ header .h__content_img {
   }
   .s-4__logo {
     width: 380px;
-    top: -80px;
+    top: -71px;
     right: 0;
   }
   .s-4 h2 {

@@ -9,7 +9,7 @@ header {
 }
 
 header .h__top {
-  font-size: 13px;
+  font-size: 1vw;
   position: relative;
   z-index: 1;
 }
@@ -48,7 +48,7 @@ header .h__content_text .marathon-info-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 18px;
+  font-size: 1.2vw;
   line-height: 1.2;
   margin-right: 5.3vw;
 }

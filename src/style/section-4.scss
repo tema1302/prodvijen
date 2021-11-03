@@ -7,7 +7,8 @@
   padding: 100px 0;
 
   &__logo {
-    top: -150px;
+    // top: -150px;
+    top: -100px;
     right: 0;
     width: 560px;
   }
@@ -48,6 +49,7 @@
     &__white-block {
       .desc {
         font-size: 16px;
+
         br {
           display: none;
         }
@@ -63,7 +65,8 @@
 
     &__logo {
       width: 380px;
-      top: -80px;
+      // top: -80px;
+      top: -71px;
       right: 0;
     }
 
@@ -117,6 +120,7 @@
 
     &__white-block {
       padding: 20px 14px;
+
       .desc {
         font-size: 14px;
       }

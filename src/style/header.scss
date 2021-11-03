@@ -10,7 +10,7 @@ header {
   color: $maincolor1;
 
   .h__top {
-    font-size: 13px;
+    font-size: 1vw;
     position: relative;
     z-index: 1;
   }
@@ -35,7 +35,7 @@ header {
         &-content {
           display: flex;
           flex-direction: column;
-          font-size: 18px;
+          font-size: 1.2vw;
           line-height: 1.2;
           margin-right: 5.3vw;
 
@@ -128,6 +128,17 @@ header {
 @media (max-width: 1400px) {
   header {
     background-position: 50% 80%;
+    .h__top {
+      font-size: 18px;
+    }
+    .h__content {
+      .marathon-info {
+
+        &-content {
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
 
@@ -182,7 +193,6 @@ header {
     }
 
     .h__content {
-
       &_text {
         width: 60%;
 
