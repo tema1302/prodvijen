@@ -461,6 +461,9 @@ header .h__content_img {
     border-radius: 50%;
     z-index: 0;
   }
+  header .h__top {
+    margin-bottom: 3vh;
+  }
   header .h__content {
     padding: 20px 0 60px 20px;
     position: relative;
@@ -902,7 +905,7 @@ header .h__content_img {
   .s-2__white-block {
     max-width: none;
     min-height: 180px;
-    padding: 47px 50px 10px 10px;
+    padding: 15px 50px 10px 10px;
   }
   .s-2__white-block_img {
     padding: 0 10px 0 50px;
@@ -1586,7 +1589,7 @@ header .h__content_img {
     margin-bottom: 15px;
   }
   .s-5__slider {
-    padding: 20px 10px;
+    padding: 40px 10px;
   }
   .s-5__slider_item {
     width: 92%;

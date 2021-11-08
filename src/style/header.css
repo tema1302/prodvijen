@@ -260,6 +260,9 @@ header .h__content_img {
     border-radius: 50%;
     z-index: 0;
   }
+  header .h__top {
+    margin-bottom: 3vh;
+  }
   header .h__content {
     padding: 20px 0 60px 20px;
     position: relative;
